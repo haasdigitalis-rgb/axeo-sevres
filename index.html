@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<!-- ═══════════════════════════════════════════════════════
+     1. DEXEM CALL TRACKING — EN PREMIER (indépendant consentement)
+     ═══════════════════════════════════════════════════════ -->
+<script type="text/javascript" src="https://cdn.dexem.net/tags/293d65ac-8812-4df5-aab5-f97cc2d98e37/dexem.js"></script>
+
+<!-- ═══════════════════════════════════════════════════════
+     2. CONSENT MODE v2 — refus par défaut (RGPD)
+     ═══════════════════════════════════════════════════════ -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'wait_for_update': 500
+  });
+</script>
+
+<!-- ═══════════════════════════════════════════════════════
+     3. GOOGLE TAG MANAGER (GTM-SEVRES-A-REMPLIR)
+     ═══════════════════════════════════════════════════════ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-SEVRES-A-REMPLIR');</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+
+<title>Ménage à Domicile à Sèvres | AXEO Services — Devis Gratuit en 1h</title>
+<meta name="description" content="Ménage à domicile à Sèvres, Meudon, Chaville, Ville-d'Avray — intervention sous 48h. AXEO Services, filiale La Poste. 50% crédit d'impôt. Devis gratuit : ☎ 01 46 26 96 75">
+
+<link rel="canonical" href="https://www.axeo-sevres.fr/" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ménage à Domicile à Sèvres | AXEO Services">
+<meta property="og:description" content="Ménage, repassage, aide à domicile — intervention sous 48h. 50% crédit d'impôt. Devis gratuit en 1h.">
+<meta property="og:url" content="https://www.axeo-sevres.fr/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.axeo-sevres.fr/assets/hero-menage-sevres.jpg">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "AXEO Services Sèvres",
+  "legalName": "Bicotin Services",
+  "url": "https://www.axeo-sevres.fr",
+  "telephone": "+33146269675",
+  "image": "https://www.axeo-sevres.fr/assets/hero-menage-sevres.jpg",
+  "priceRange": "€€",
+  "description": "Services à domicile : ménage, repassage, aide à domicile, jardinage, garde d'enfants à Sèvres et communes limitrophes.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "25 Avenue de l'Europe",
+    "addressLocality": "Sèvres",
+    "postalCode": "92310",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.8236,
+    "longitude": 2.2111
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Sèvres"},
+    {"@type": "City", "name": "Meudon"},
+    {"@type": "City", "name": "Chaville"},
+    {"@type": "City", "name": "Ville-d'Avray"},
+    {"@type": "City", "name": "Vaucresson"},
+    {"@type": "City", "name": "Marnes-la-Coquette"},
+    {"@type": "City", "name": "Meudon-la-Forêt"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "50"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "19:00"
+  }]
+}
+</script>
+
+<!-- Preload image héro -->
+<link rel="preload" as="image" href="assets/hero-menage-sevres.jpg" fetchpriority="high">
+
+<style>
+/* ═══════════════════════════════════════════════════════
+   RESET & BASE — Identité AXEO (orange #F29400 + noir)
+   ═══════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --axeo-orange: #F29400;
+  --axeo-orange-dark: #D87F00;
+  --axeo-black: #1A1A1A;
+  --axeo-gray-light: #F5F5F5;
+  --axeo-gray: #666666;
+  --laposte-yellow: #FFCC00;
+  --success: #16a34a;
+  --danger: #c0392b;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--axeo-black);
+  background: #fff;
+  padding-bottom: 80px; /* espace pour sticky bar mobile */
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--axeo-orange); text-decoration: none; }
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+/* ═══════════════════════════════════════════════════════
+   HEADER — logo + numéro
+   ═══════════════════════════════════════════════════════ */
+.header {
+  background: #fff;
+  border-bottom: 3px solid var(--axeo-orange);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-axeo {
+  height: 44px;
+  width: auto;
+}
+.logo-poste {
+  height: 36px;
+  width: auto;
+  border-left: 1px solid #e5e5e5;
+  padding-left: 12px;
+}
+.logo-city {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--axeo-black);
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+}
+.logo-city small {
+  display: block;
+  font-size: 11px;
+  color: var(--axeo-gray);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+@media (max-width: 640px) {
+  .logo-axeo { height: 36px; }
+  .logo-poste { height: 28px; padding-left: 8px; }
+  .logo-city { display: none; }
+}
+.header-phone {
+  background: var(--axeo-orange);
+  color: #fff;
+  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.header-phone:hover { background: var(--axeo-orange-dark); transform: translateY(-1px); }
+.header-phone .phone-num { color: #fff; }
+
+/* ═══════════════════════════════════════════════════════
+   HERO — image de fond femme de ménage
+   ═══════════════════════════════════════════════════════ */
+.hero {
+  position: relative;
+  color: #fff;
+  padding: 80px 0 100px;
+  background:
+    linear-gradient(rgba(26,26,26,0.72), rgba(26,26,26,0.78)),
+    url('assets/hero-menage-sevres.jpg') center/cover no-repeat;
+  min-height: 560px;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0 80px;
+    min-height: 500px;
+    background:
+      linear-gradient(rgba(26,26,26,0.75), rgba(26,26,26,0.80)),
+      url('assets/hero-menage-sevres-mobile.jpg') center/cover no-repeat;
+  }
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--axeo-orange);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+.hero h1 span {
+  color: var(--axeo-orange);
+  display: block;
+}
+@media (max-width: 768px) {
+  .hero h1 { font-size: 32px; }
+}
+
+.hero-subtitle {
+  font-size: 19px;
+  margin-bottom: 32px;
+  opacity: 0.95;
+  max-width: 640px;
+}
+@media (max-width: 768px) {
+  .hero-subtitle { font-size: 16px; }
+}
+
+.cta-big {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--axeo-orange);
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  padding: 20px 32px;
+  border-radius: 12px;
+  transition: all 0.2s;
+  box-shadow: 0 6px 24px rgba(242,148,0,0.4);
+}
+.cta-big:hover {
+  background: var(--axeo-orange-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(242,148,0,0.5);
+}
+.cta-big .phone-num { color: #fff; }
+
+.cta-sub {
+  font-size: 14px;
+  margin-top: 12px;
+  opacity: 0.9;
+}
+.cta-sub strong { color: var(--axeo-orange); }
+
+/* Trust bar */
+.trust-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+}
+.trust-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.trust-bar-item strong { color: var(--axeo-orange); font-weight: 700; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION OFFRE — bloc garantie
+   ═══════════════════════════════════════════════════════ */
+.offer-box {
+  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  margin: -60px auto 60px;
+  max-width: 900px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 12px 40px rgba(242,148,0,0.3);
+}
+.offer-box h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .offer-box h2 { font-size: 22px; }
+}
+.offer-box p { font-size: 17px; opacity: 0.95; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 3 BÉNÉFICES
+   ═══════════════════════════════════════════════════════ */
+.section { padding: 70px 0; }
+.section-title {
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--axeo-black);
+  letter-spacing: -0.5px;
+}
+.section-title span { color: var(--axeo-orange); }
+.section-subtitle {
+  text-align: center;
+  color: var(--axeo-gray);
+  font-size: 17px;
+  margin-bottom: 48px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .section-title { font-size: 26px; }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+.benefit-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+.benefit-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--axeo-orange);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.benefit-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.benefit-card p { color: var(--axeo-gray); font-size: 15px; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION SERVICES
+   ═══════════════════════════════════════════════════════ */
+.bg-gray { background: var(--axeo-gray-light); }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 10px;
+  border-left: 4px solid var(--axeo-orange);
+  transition: transform 0.2s;
+}
+.service-card.featured {
+  background: var(--axeo-black);
+  color: #fff;
+  border-left-color: var(--axeo-orange);
+  transform: scale(1.02);
+}
+.service-card:hover { transform: translateY(-3px); }
+.service-card.featured:hover { transform: scale(1.02) translateY(-3px); }
+.service-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.service-card p {
+  color: var(--axeo-gray);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.service-card.featured p { color: rgba(255,255,255,0.85); }
+.service-card .badge-pop {
+  display: inline-block;
+  background: var(--axeo-orange);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION DIFFÉRENCIATION
+   ═══════════════════════════════════════════════════════ */
+.differentiation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+.diff-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.diff-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--axeo-orange);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 900;
+}
+.diff-item h4 {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.diff-item p { color: var(--axeo-gray); font-size: 14px; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION AVANT / APRÈS
+   ═══════════════════════════════════════════════════════ */
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+@media (max-width: 640px) {
+  .before-after { grid-template-columns: 1fr; }
+}
+.ba-card {
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid;
+}
+.ba-before {
+  background: #FEF2F2;
+  border-color: #FCA5A5;
+}
+.ba-after {
+  background: #F0FDF4;
+  border-color: #86EFAC;
+}
+.ba-card h4 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ba-before h4 { color: #991B1B; }
+.ba-after h4 { color: #166534; }
+.ba-card ul { list-style: none; }
+.ba-card li {
+  padding: 6px 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 15px;
+}
+.ba-before li::before { content: '✗'; position: absolute; left: 0; color: #DC2626; font-weight: 900; }
+.ba-after li::before { content: '✓'; position: absolute; left: 0; color: #16A34A; font-weight: 900; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION AVIS
+   ═══════════════════════════════════════════════════════ */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+.review-card {
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+.review-stars { color: #FFC107; font-size: 18px; margin-bottom: 12px; letter-spacing: 2px; }
+.review-text {
+  font-size: 15px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.review-author {
+  font-size: 13px;
+  color: var(--axeo-gray);
+  font-weight: 600;
+}
+.review-author strong { color: var(--axeo-black); font-weight: 800; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION FAQ
+   ═══════════════════════════════════════════════════════ */
+.faq-list {
+  max-width: 820px;
+  margin: 40px auto 0;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faq-question {
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+.faq-question:hover { background: var(--axeo-gray-light); }
+.faq-question::after {
+  content: '+';
+  font-size: 28px;
+  color: var(--axeo-orange);
+  font-weight: 300;
+  transition: transform 0.3s;
+}
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  padding: 0 24px;
+}
+.faq-item.open .faq-answer {
+  max-height: 400px;
+  padding: 0 24px 20px;
+}
+.faq-answer p { color: var(--axeo-gray); font-size: 15px; }
+
+/* ═══════════════════════════════════════════════════════
+   SECTION FORMULAIRE + ZONE
+   ═══════════════════════════════════════════════════════ */
+.form-zone-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .form-zone-grid { grid-template-columns: 1fr; }
+}
+
+.form-card {
+  background: #fff;
+  padding: 36px 30px;
+  border-radius: 14px;
+  border: 2px solid var(--axeo-orange);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.form-card h3 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.form-card p { color: var(--axeo-gray); margin-bottom: 24px; font-size: 15px; }
+
+.form-group { margin-bottom: 16px; }
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--axeo-orange);
+  box-shadow: 0 0 0 3px rgba(242,148,0,0.15);
+}
+.form-consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--axeo-gray);
+}
+.form-consent input { margin-top: 3px; flex-shrink: 0; }
+.form-consent a { color: var(--axeo-orange); text-decoration: underline; }
+
+.btn-submit {
+  width: 100%;
+  background: var(--axeo-orange);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 800;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.btn-submit:hover:not(:disabled) {
+  background: var(--axeo-orange-dark);
+  transform: translateY(-1px);
+}
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+#form-error {
+  display: none;
+  background: #FEF2F2;
+  color: var(--danger);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+#form-merci {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+#form-merci h3 { color: var(--success); font-size: 26px; margin-bottom: 10px; }
+#form-merci p { color: var(--axeo-gray); font-size: 16px; }
+#form-merci .check-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  background: var(--success);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.zone-card {
+  background: var(--axeo-black);
+  color: #fff;
+  padding: 36px 30px;
+  border-radius: 14px;
+}
+.zone-card h3 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.zone-list {
+  list-style: none;
+  columns: 2;
+  gap: 16px;
+}
+.zone-list li {
+  padding: 8px 0;
+  padding-left: 22px;
+  position: relative;
+  font-size: 15px;
+}
+.zone-list li::before {
+  content: '📍';
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+}
+.zone-info {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ═══════════════════════════════════════════════════════
+   CTA FINAL
+   ═══════════════════════════════════════════════════════ */
+.cta-final {
+  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+.cta-final h2 {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+.cta-final p { font-size: 19px; margin-bottom: 32px; opacity: 0.95; }
+.cta-final .cta-big {
+  background: #fff;
+  color: var(--axeo-orange);
+  font-size: 24px;
+  padding: 22px 40px;
+}
+.cta-final .cta-big .phone-num { color: var(--axeo-orange); }
+.cta-final .cta-big:hover { background: var(--axeo-gray-light); transform: translateY(-2px); }
+@media (max-width: 768px) {
+  .cta-final h2 { font-size: 26px; }
+  .cta-final .cta-big { font-size: 19px; padding: 18px 24px; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   STICKY BAR MOBILE
+   ═══════════════════════════════════════════════════════ */
+.sticky-mobile {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: #fff;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
+  z-index: 1000;
+  padding: 8px;
+  gap: 8px;
+}
+.sticky-mobile a {
+  flex: 1;
+  text-align: center;
+  padding: 14px 8px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.sticky-tel {
+  background: var(--axeo-orange);
+  color: #fff;
+}
+.sticky-tel .phone-num { color: #fff; }
+.sticky-form {
+  background: var(--axeo-black);
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .sticky-mobile { display: flex; }
+}
+
+/* ═══════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════ */
+.footer {
+  background: var(--axeo-black);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 14px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+.footer h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: var(--axeo-orange);
+}
+.footer p, .footer li { color: rgba(255,255,255,0.75); line-height: 1.7; }
+.footer ul { list-style: none; }
+.footer a { color: rgba(255,255,255,0.75); transition: color 0.2s; }
+.footer a:hover { color: var(--axeo-orange); }
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ═══════════════════════════════════════════════════════
+   BANDEAU CNIL COOKIES
+   ═══════════════════════════════════════════════════════ */
+#cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--axeo-black);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+  box-shadow: 0 -6px 24px rgba(0,0,0,0.3);
+}
+#cookie-banner.show { display: block; }
+.cookie-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cookie-text { flex: 1; min-width: 280px; font-size: 14px; }
+.cookie-text a { color: var(--axeo-orange); text-decoration: underline; }
+.cookie-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+.cookie-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.cookie-accept {
+  background: var(--axeo-orange);
+  color: #fff;
+}
+.cookie-accept:hover { background: var(--axeo-orange-dark); }
+.cookie-refuse {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.cookie-refuse:hover { background: rgba(255,255,255,0.1); }
+@media (max-width: 640px) {
+  #cookie-banner { padding: 16px; padding-bottom: 90px; }
+  .cookie-buttons { width: 100%; }
+  .cookie-btn { flex: 1; }
+}
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-SEVRES-A-REMPLIR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ═══════════════════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════════════════ -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="assets/logo-axeo.jpg" alt="AXEO Services" class="logo-axeo">
+      <img src="assets/logo-laposte.jpg" alt="Filiale La Poste" class="logo-poste">
+      <div class="logo-city">Sèvres<small>92310</small></div>
+    </div>
+    <a class="header-phone" href="tel:+33146269675" onclick="return callClick('header')">
+      📞 <span class="phone-num">01 46 26 96 75</span>
+    </a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">⚡ Intervention sous 48h · Sèvres &amp; communes limitrophes</div>
+    <h1>
+      Ménage à domicile à Sèvres —
+      <span>service clé en main</span>
+    </h1>
+    <p class="hero-subtitle">
+      Intervenants de confiance, formés, assurés. <strong>Devis gratuit en 1h</strong>,
+      première intervention sous 48h. Profitez du <strong>crédit d'impôt 50%</strong>.
+    </p>
+    <a class="cta-big" href="tel:+33146269675" onclick="return callClick('hero')">
+      📞 <span class="phone-num">01 46 26 96 75</span>
+    </a>
+    <div class="cta-sub">
+      Ou <a href="#contact" style="color:#fff;text-decoration:underline;">être rappelé gratuitement</a> · <strong>Réponse immédiate, sans engagement</strong>
+    </div>
+
+    <div class="trust-bar">
+      <div class="trust-bar-item">⭐ <strong>4.5/5</strong> · 50+ avis Google</div>
+      <div class="trust-bar-item">🏢 Filiale <strong>La Poste</strong></div>
+      <div class="trust-bar-item">💰 <strong>50% crédit d'impôt</strong> SAP</div>
+      <div class="trust-bar-item">📅 <strong>Depuis 2016</strong> à Sèvres</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     OFFRE / PROMESSE
+     ═══════════════════════════════════════════════════════ -->
+<div class="container">
+  <div class="offer-box">
+    <h2>Devis gratuit en 1h garanti. Première intervention sous 48h.</h2>
+    <p>Pas satisfait du premier passage ? On revient corriger — gratuitement.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     3 BÉNÉFICES
+     ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Pourquoi choisir <span>AXEO Services Sèvres</span></h2>
+    <p class="section-subtitle">
+      Notre agence locale de Sèvres gère vos interventions de A à Z. Un seul interlocuteur,
+      des intervenants formés, un engagement qualité signé AXEO.
+    </p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🎯</div>
+        <h3>Un seul interlocuteur</h3>
+        <p>Notre équipe gère tout : planning, remplacements, facturation. Fini le téléphone arabe entre 5 prestataires.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">⏱️</div>
+        <h3>Délais garantis</h3>
+        <p>Intervention sous 48h. En cas de retard ou absence, remplacement immédiat par un autre intervenant formé.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <h3>50% crédit d'impôt</h3>
+        <p>Service à la personne agréé : votre facture est divisée par deux grâce au crédit d'impôt automatique.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════════════════════ -->
+<section class="section bg-gray" id="services">
+  <div class="container">
+    <h2 class="section-title">Nos <span>services à domicile</span> à Sèvres</h2>
+    <p class="section-subtitle">Tous nos services ouvrent droit au crédit d'impôt de 50%.</p>
+    <div class="services-grid">
+      <div class="service-card featured">
+        <h3>🧹 Ménage à domicile <span class="badge-pop">★ Populaire</span></h3>
+        <p>Entretien régulier ou ponctuel de votre logement. Sols, vitres, cuisine, salle de bain, chambres. Matériel et produits fournis.</p>
+      </div>
+      <div class="service-card">
+        <h3>👔 Repassage</h3>
+        <p>À domicile ou repassage externalisé. Linge plié et rangé avec soin.</p>
+      </div>
+      <div class="service-card">
+        <h3>👵 Aide à domicile seniors</h3>
+        <p>Accompagnement, aide aux repas, ménage adapté, course. Pour un maintien à domicile serein.</p>
+      </div>
+      <div class="service-card">
+        <h3>🌿 Jardinage</h3>
+        <p>Entretien espaces verts, tonte, taille, ramassage feuilles. Petits jardins et terrasses.</p>
+      </div>
+      <div class="service-card">
+        <h3>🔧 Petit bricolage</h3>
+        <p>Montage de meubles, fixation d'étagères, changement d'ampoules, petites réparations.</p>
+      </div>
+      <div class="service-card">
+        <h3>👶 Garde d'enfants</h3>
+        <p>Sortie d'école, aide aux devoirs, garde à domicile. Intervenants expérimentés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     DIFFÉRENCIATION
+     ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Ce qui fait la <span>différence AXEO</span></h2>
+    <div class="differentiation-grid">
+      <div class="diff-item">
+        <div class="diff-icon">✓</div>
+        <div>
+          <h4>Filiale La Poste</h4>
+          <p>Solidité, éthique et engagement qualité d'un grand groupe français.</p>
+        </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">✓</div>
+        <div>
+          <h4>Intervenants formés et assurés</h4>
+          <p>Tous nos intervenants sont salariés de l'agence, formés et couverts par notre assurance.</p>
+        </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">✓</div>
+        <div>
+          <h4>Pas de contrat piégeux</h4>
+          <p>Engagement mensuel, résiliable à tout moment. Pas de frais cachés.</p>
+        </div>
+      </div>
+      <div class="diff-item">
+        <div class="diff-icon">✓</div>
+        <div>
+          <h4>Remplacements gérés</h4>
+          <p>Absence de votre intervenant ? Remplacement assuré par l'agence en 24h.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     AVANT / APRÈS
+     ═══════════════════════════════════════════════════════ -->
+<section class="section bg-gray">
+  <div class="container">
+    <h2 class="section-title">Avant / Après avec <span>AXEO Sèvres</span></h2>
+    <div class="before-after">
+      <div class="ba-card ba-before">
+        <h4>😩 Sans AXEO</h4>
+        <ul>
+          <li>Votre intervenante annule, personne ne vient</li>
+          <li>Pas de remplacement, vous devez tout gérer</li>
+          <li>Aucune facture RGPD → pas de crédit d'impôt</li>
+          <li>Paiement en espèces, pas de garantie</li>
+          <li>Qualité variable, pas de contrôle</li>
+        </ul>
+      </div>
+      <div class="ba-card ba-after">
+        <h4>😊 Avec AXEO Sèvres</h4>
+        <ul>
+          <li>Intervention garantie, remplacement sous 24h</li>
+          <li>Un seul interlocuteur qui gère tout</li>
+          <li>Facture déductible, crédit d'impôt automatique</li>
+          <li>Prélèvement mensuel, intervenants assurés</li>
+          <li>Suivi qualité agence, ajustements possibles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     AVIS CLIENTS
+     ═══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Ce que disent <span>nos clients</span></h2>
+    <p class="section-subtitle">4.5/5 sur Google · Plus de 50 avis</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Très professionnelle, ponctuelle et minutieuse. Notre intervenante est un bijou. Très bonne communication avec l'agence."</p>
+        <div class="review-author"><strong>Sophie L.</strong> · Sèvres</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Service impeccable pour ma maman de 87 ans. L'équipe AXEO est à l'écoute et s'adapte aux besoins. Je recommande vivement."</p>
+        <div class="review-author"><strong>Thierry M.</strong> · Meudon</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Agence sérieuse, réactive. Devis reçu sous 1h, première intervention 2 jours plus tard. Très satisfaite du ménage."</p>
+        <div class="review-author"><strong>Claire D.</strong> · Chaville</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════════════════ -->
+<section class="section bg-gray">
+  <div class="container">
+    <h2 class="section-title">Vos questions — <span>nos réponses</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Combien coûte une heure de ménage ?</div>
+        <div class="faq-answer">
+          <p>Nos tarifs démarrent à 25€/h en ménage classique. <strong>Après crédit d'impôt de 50%</strong>, votre coût réel est de <strong>12,50€/h</strong>. Un devis personnalisé est fait sous 1h en fonction de votre logement et de la fréquence.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Combien de temps pour la première intervention ?</div>
+        <div class="faq-answer">
+          <p>Sous <strong>48h maximum</strong> après validation du devis. Pour les aides urgentes (sortie hospitalisation, aide seniors), on peut intervenir <strong>sous 24h</strong> selon disponibilité.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Comment fonctionne le crédit d'impôt de 50% ?</div>
+        <div class="faq-answer">
+          <p>AXEO est agréé Service à la Personne. Chaque euro dépensé chez nous ouvre droit à <strong>50% de crédit d'impôt</strong>, même si vous n'êtes pas imposable. Vous payez 25€/h, vous récupérez 12,50€ au prélèvement mensuel via l'avance immédiate (URSSAF).</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Et si l'intervenant ne vient pas ?</div>
+        <div class="faq-answer">
+          <p>Nos intervenants sont salariés de l'agence. En cas d'absence (maladie, congés), l'<strong>agence gère le remplacement sous 24h</strong>. Vous n'avez rien à organiser.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Quelles communes couvrez-vous ?</div>
+        <div class="faq-answer">
+          <p>Sèvres, Meudon, Meudon-la-Forêt, Chaville, Ville-d'Avray, Vaucresson, Marnes-la-Coquette. Pour une commune limitrophe, contactez-nous — c'est souvent possible.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Puis-je résilier facilement ?</div>
+        <div class="faq-answer">
+          <p>Oui. Aucun engagement de durée. Résiliation possible sur <strong>simple email</strong> avec un mois de préavis. Pas de frais cachés.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FORMULAIRE + ZONE
+     ═══════════════════════════════════════════════════════ -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Demandez votre <span>devis gratuit</span></h2>
+    <p class="section-subtitle">Réponse sous 1h ouvré. Sans engagement.</p>
+
+    <div class="form-zone-grid">
+
+      <div class="form-card">
+        <h3>Être rappelé gratuitement</h3>
+        <p>On vous rappelle dans l'heure. Sans engagement.</p>
+
+        <div id="form-contact">
+          <div id="form-error">⚠️ Veuillez remplir tous les champs obligatoires.</div>
+
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone *</label>
+            <input type="tel" id="telephone" name="telephone" required placeholder="06 12 34 56 78">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service souhaité *</label>
+            <select id="service" name="service" required>
+              <option value="">— Sélectionner —</option>
+              <option value="Ménage à domicile">Ménage à domicile</option>
+              <option value="Repassage">Repassage</option>
+              <option value="Aide seniors">Aide à domicile seniors</option>
+              <option value="Jardinage">Jardinage</option>
+              <option value="Bricolage">Petit bricolage</option>
+              <option value="Garde enfants">Garde d'enfants</option>
+              <option value="Plusieurs services">Plusieurs services</option>
+            </select>
+          </div>
+
+          <div class="form-consent">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">
+              J'accepte d'être recontacté par AXEO Services Sèvres conformément à la
+              <a href="/politique-confidentialite/" target="_blank">politique de confidentialité</a>. *
+            </label>
+          </div>
+
+          <button type="button" id="btn-submit" class="btn-submit" onclick="envoyerFormulaire()">
+            📞 Être rappelé gratuitement
+          </button>
+        </div>
+
+        <div id="form-merci">
+          <div class="check-icon">✓</div>
+          <h3>Merci !</h3>
+          <p>Votre demande est bien reçue.<br>On vous rappelle sous 1h.</p>
+        </div>
+      </div>
+
+      <div class="zone-card">
+        <h3>📍 Notre zone d'intervention</h3>
+        <ul class="zone-list">
+          <li>Sèvres</li>
+          <li>Meudon</li>
+          <li>Meudon-la-Forêt</li>
+          <li>Chaville</li>
+          <li>Ville-d'Avray</li>
+          <li>Vaucresson</li>
+          <li>Marnes-la-Coquette</li>
+        </ul>
+        <div class="zone-info">
+          <p><strong>AXEO Services Sèvres</strong><br>
+          25 Avenue de l'Europe, 92310 Sèvres<br>
+          <br>
+          📞 <a href="tel:+33146269675" class="phone-num" style="color:#F29400;font-weight:800" onclick="return callClick('zone')">01 46 26 96 75</a><br>
+          ✉ sevres@axeoservices.fr<br>
+          <br>
+          Lun–Ven : 8h–19h</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA FINAL
+     ═══════════════════════════════════════════════════════ -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Prêt à vous simplifier la vie ?</h2>
+    <p>Devis gratuit en 1h · Intervention sous 48h · 50% crédit d'impôt</p>
+    <a class="cta-big" href="tel:+33146269675" onclick="return callClick('cta-final')">
+      📞 <span class="phone-num">01 46 26 96 75</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:16px;">
+          <img src="assets/logo-axeo.jpg" alt="AXEO Services" style="height:44px; background:#fff; padding:4px 8px; border-radius:6px;">
+          <img src="assets/logo-laposte.jpg" alt="Filiale La Poste" style="height:36px; background:#fff; padding:4px 6px; border-radius:6px;">
+        </div>
+        <h4>AXEO Services Sèvres</h4>
+        <p>
+          Services à domicile agréés par l'État · Agrément SAP<br>
+          Exploité par <strong>Bicotin Services</strong><br>
+          25 Avenue de l'Europe, 92310 Sèvres<br>
+          SIRET 824 171 466 00017<br>
+          Code APE 88.10A · Filiale La Poste
+        </p>
+      </div>
+      <div>
+        <h4>Nos services</h4>
+        <ul>
+          <li>Ménage à domicile</li>
+          <li>Repassage</li>
+          <li>Aide à domicile seniors</li>
+          <li>Jardinage</li>
+          <li>Garde d'enfants</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="/mentions-legales/">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite/">Politique de confidentialité</a></li>
+          <li><a href="tel:+33146269675" onclick="return callClick('footer')">
+            📞 <span class="phone-num">01 46 26 96 75</span>
+          </a></li>
+          <li>✉ sevres@axeoservices.fr</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 AXEO Services Sèvres (Bicotin Services) · Tous droits réservés
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     STICKY BAR MOBILE
+     ═══════════════════════════════════════════════════════ -->
+<div class="sticky-mobile">
+  <a class="sticky-tel" href="tel:+33146269675" onclick="return callClick('sticky')">
+    📞 <span class="phone-num">01 46 26 96 75</span>
+  </a>
+  <a class="sticky-form" href="#contact">
+    ✉ Devis
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     BANDEAU CNIL COOKIES
+     ═══════════════════════════════════════════════════════ -->
+<div id="cookie-banner">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      Nous utilisons des cookies pour mesurer l'audience et améliorer votre expérience.
+      En savoir plus dans notre <a href="/politique-confidentialite/">politique de confidentialité</a>.
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════════════ -->
+<script>
+// ── URL du webhook Apps Script (Sheet maître HAAS) ──
+const APPS_SCRIPT_URL = 'VOTRE_URL_APPS_SCRIPT_A_REMPLIR';
+const CLIENT_SLUG = 'axeo-sevres';
+
+// ── FAQ toggle ──
+function toggleFaq(el) {
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+
+// ── Tracking appel (GTM event + call_click) ──
+function callClick(emplacement) {
+  if (window.dataLayer) {
+    dataLayer.push({
+      'event': 'call_click',
+      'call_location': emplacement,
+      'phone_number': '+33146269675'
+    });
+  }
+  return true; // laisse le href tel: suivre
+}
+
+// ── Auto-format téléphone ──
+document.getElementById('telephone').addEventListener('input', function(e) {
+  let v = e.target.value.replace(/\D/g, '');
+  if (v.length > 0) v = v.match(/.{1,2}/g).join(' ');
+  e.target.value = v.substring(0, 14);
+});
+
+// ── Envoi formulaire ──
+async function envoyerFormulaire() {
+  const prenom = document.getElementById('prenom').value.trim();
+  const telephone = document.getElementById('telephone').value.trim();
+  const service = document.getElementById('service').value;
+  const consent = document.getElementById('consent').checked;
+  const erreur = document.getElementById('form-error');
+  const btn = document.getElementById('btn-submit');
+
+  if (!prenom || !telephone || !service || !consent) {
+    erreur.style.display = 'block';
+    return;
+  }
+  erreur.style.display = 'none';
+
+  btn.disabled = true;
+  btn.textContent = '⏳ Envoi en cours...';
+
+  // Récupération UTM depuis l'URL
+  const params = new URLSearchParams(window.location.search);
+
+  const data = {
+    client_slug: CLIENT_SLUG,
+    prenom: prenom,
+    telephone: telephone,
+    service: service,
+    commune: '',
+    message: '',
+    page: window.location.href,
+    source: document.referrer || 'Direct',
+    utm_source: params.get('utm_source') || '',
+    utm_medium: params.get('utm_medium') || '',
+    utm_campaign: params.get('utm_campaign') || ''
+  };
+
+  try {
+    await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    // Tracking GTM
+    if (window.dataLayer) {
+      dataLayer.push({
+        'event': 'form_lead',
+        'service': service,
+        'client': CLIENT_SLUG
+      });
+    }
+
+    document.getElementById('form-contact').style.display = 'none';
+    document.getElementById('form-merci').style.display = 'block';
+  } catch(e) {
+    btn.disabled = false;
+    btn.textContent = '📞 Être rappelé gratuitement';
+    erreur.textContent = '⚠️ Erreur réseau. Merci de rappeler au 01 46 26 96 75.';
+    erreur.style.display = 'block';
+  }
+}
+
+// ── Consent Mode v2 cookies ──
+function acceptCookies() {
+  gtag('consent', 'update', {
+    'ad_storage': 'granted',
+    'analytics_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted'
+  });
+  localStorage.setItem('cookie_consent', 'accepted');
+  document.getElementById('cookie-banner').classList.remove('show');
+}
+function refuseCookies() {
+  localStorage.setItem('cookie_consent', 'refused');
+  document.getElementById('cookie-banner').classList.remove('show');
+}
+// Afficher le bandeau si pas encore de choix
+window.addEventListener('DOMContentLoaded', function() {
+  if (!localStorage.getItem('cookie_consent')) {
+    setTimeout(function() {
+      document.getElementById('cookie-banner').classList.add('show');
+    }, 1000);
+  } else if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+  }
+});
+</script>
+
+</body>
+</html>
