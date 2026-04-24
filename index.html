@@ -3,23 +3,27 @@
 <head>
 
 <!-- ═══════════════════════════════════════════════════════
-     1. DEXEM CALL TRACKING — EN PREMIER (indépendant consentement)
+     1. DEXEM CALL TRACKING — TOUJOURS EN PREMIER DANS <head>
      ═══════════════════════════════════════════════════════ -->
 <script type="text/javascript" src="https://cdn.dexem.net/tags/293d65ac-8812-4df5-aab5-f97cc2d98e37/dexem.js"></script>
 
 <!-- ═══════════════════════════════════════════════════════
-     2. CONSENT MODE v2 — refus par défaut (RGPD)
+     2. CONSENT MODE V2 (default-denied)
      ═══════════════════════════════════════════════════════ -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'wait_for_update': 500
-  });
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'functionality_storage': 'granted',
+  'security_storage': 'granted',
+  'wait_for_update': 500
+});
+gtag('set', 'ads_data_redaction', true);
+gtag('set', 'url_passthrough', true);
 </script>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -33,33 +37,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
 
-<title>Ménage à Domicile à Sèvres | AXEO Services — Devis Gratuit en 1h</title>
-<meta name="description" content="Ménage à domicile à Sèvres, Meudon, Chaville, Ville-d'Avray — intervention sous 48h. AXEO Services, filiale La Poste. 50% crédit d'impôt. Devis gratuit : ☎ 01 46 26 96 75">
+<title>Nettoyage Bureaux & Locaux Pros à Sèvres | AXEO Services</title>
+<meta name="description" content="Nettoyage de bureaux, copropriétés et commerces à Sèvres et Hauts-de-Seine — Devis sous 24h, intervention dès demain. AXEO Services Pro, filiale La Poste. ☎ 01 46 26 96 75">
+<link rel="canonical" href="https://www.axeo-sevres.fr/">
 
-<link rel="canonical" href="https://www.axeo-sevres.fr/" />
-
-<!-- Open Graph -->
-<meta property="og:title" content="Ménage à Domicile à Sèvres | AXEO Services">
-<meta property="og:description" content="Ménage, repassage, aide à domicile — intervention sous 48h. 50% crédit d'impôt. Devis gratuit en 1h.">
-<meta property="og:url" content="https://www.axeo-sevres.fr/">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.axeo-sevres.fr/assets/hero-menage-sevres.jpg">
+<meta property="og:title" content="Nettoyage Bureaux & Locaux Pros — AXEO Services Sèvres">
+<meta property="og:description" content="Nettoyage professionnel de bureaux, copropriétés et commerces. Devis sous 24h, intervention rapide. Crédit d'impôt mécénat possible.">
+<meta property="og:url" content="https://www.axeo-sevres.fr/">
 <meta property="og:locale" content="fr_FR">
 
-<!-- Schema.org LocalBusiness -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- JSON-LD LocalBusiness B2B -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "AXEO Services Sèvres",
-  "legalName": "Bicotin Services",
-  "url": "https://www.axeo-sevres.fr",
+  "@type": "ProfessionalService",
+  "name": "AXEO Services Sèvres - Pro",
+  "image": "https://www.axeo-sevres.fr/assets/logo-axeo.jpg",
+  "@id": "https://www.axeo-sevres.fr/",
+  "url": "https://www.axeo-sevres.fr/",
   "telephone": "+33146269675",
-  "image": "https://www.axeo-sevres.fr/assets/hero-menage-sevres.jpg",
+  "email": "sevres@axeoservices.fr",
   "priceRange": "€€",
-  "description": "Services à domicile : ménage, repassage, aide à domicile, jardinage, garde d'enfants à Sèvres et communes limitrophes.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "25 Avenue de l'Europe",
@@ -69,8 +73,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 48.8236,
-    "longitude": 2.2111
+    "latitude": 48.8230,
+    "longitude": 2.2110
   },
   "areaServed": [
     {"@type": "City", "name": "Sèvres"},
@@ -78,75 +82,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {"@type": "City", "name": "Chaville"},
     {"@type": "City", "name": "Ville-d'Avray"},
     {"@type": "City", "name": "Vaucresson"},
-    {"@type": "City", "name": "Marnes-la-Coquette"},
-    {"@type": "City", "name": "Meudon-la-Forêt"}
+    {"@type": "City", "name": "Boulogne-Billancourt"},
+    {"@type": "City", "name": "Issy-les-Moulineaux"}
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.5",
-    "reviewCount": "50"
-  },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
     "opens": "08:00",
     "closes": "19:00"
-  }]
+  }],
+  "serviceType": [
+    "Nettoyage de bureaux",
+    "Entretien de copropriétés",
+    "Nettoyage de commerces",
+    "Remise en état de chantier",
+    "Nettoyage de vitrines",
+    "Entretien d'espaces verts professionnels"
+  ]
 }
 </script>
 
-<!-- Preload image héro -->
-<link rel="preload" as="image" href="assets/hero-menage-sevres.jpg" fetchpriority="high">
-
 <style>
-/* ═══════════════════════════════════════════════════════
-   RESET & BASE — Identité AXEO (orange #F29400 + noir)
-   ═══════════════════════════════════════════════════════ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+* { margin:0; padding:0; box-sizing:border-box; }
 
 :root {
   --axeo-orange: #F29400;
-  --axeo-orange-dark: #D87F00;
-  --axeo-black: #1A1A1A;
-  --axeo-gray-light: #F5F5F5;
-  --axeo-gray: #666666;
-  --laposte-yellow: #FFCC00;
-  --success: #16a34a;
-  --danger: #c0392b;
+  --axeo-orange-dark: #d68000;
+  --axeo-black: #1a1a1a;
+  --axeo-blue: #0a3d62;
+  --axeo-blue-dark: #082f4a;
+  --axeo-gray: #6b7280;
+  --axeo-light: #f9fafb;
+  --axeo-success: #10b981;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
   color: var(--axeo-black);
+  line-height: 1.5;
   background: #fff;
-  padding-bottom: 80px; /* espace pour sticky bar mobile */
 }
 
-img { max-width: 100%; height: auto; display: block; }
-a { color: var(--axeo-orange); text-decoration: none; }
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
-
-/* ═══════════════════════════════════════════════════════
-   HEADER — logo + numéro
-   ═══════════════════════════════════════════════════════ */
+/* ===== HEADER ===== */
 .header {
   background: #fff;
-  border-bottom: 3px solid var(--axeo-orange);
-  padding: 12px 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
 .header-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
 }
 .logo {
@@ -164,364 +163,534 @@ a { color: var(--axeo-orange); text-decoration: none; }
   border-left: 1px solid #e5e5e5;
   padding-left: 16px;
 }
-.logo-city {
-  font-size: 17px;
+.logo-tagline {
+  font-size: 16px;
   font-weight: 800;
-  color: var(--axeo-black);
+  color: var(--axeo-blue);
   letter-spacing: -0.3px;
   line-height: 1.1;
 }
-.logo-city small {
+.logo-tagline small {
   display: block;
-  font-size: 12px;
-  color: var(--axeo-gray);
-  font-weight: 600;
+  font-size: 11px;
+  color: var(--axeo-orange);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 2px;
+  letter-spacing: 1px;
+  margin-top: 3px;
 }
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--axeo-orange);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(242,148,0,0.4);
+}
+.header-cta:hover {
+  background: var(--axeo-orange-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(242,148,0,0.5);
+}
+
 @media (max-width: 640px) {
   .logo { gap: 10px; }
   .logo-axeo { height: 62px; }
   .logo-poste { height: 30px; padding-left: 10px; }
-  .logo-city { display: none; }
+  .logo-tagline { display: none; }
+  .header-cta { padding: 11px 16px; font-size: 14px; }
 }
-.header-phone {
-  background: var(--axeo-orange);
-  color: #fff;
-  font-weight: 800;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 17px;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-.header-phone:hover { background: var(--axeo-orange-dark); transform: translateY(-1px); }
-.header-phone .phone-num { color: #fff; }
 
-/* ═══════════════════════════════════════════════════════
-   HERO — image de fond femme de ménage
-   ═══════════════════════════════════════════════════════ */
+/* ===== HERO PRO (gradient bleu professionnel + accent orange) ===== */
 .hero {
   position: relative;
+  background: linear-gradient(135deg, #082f4a 0%, #0a3d62 50%, #0d4977 100%);
   color: #fff;
   padding: 80px 0 100px;
-  background:
-    linear-gradient(rgba(26,26,26,0.72), rgba(26,26,26,0.78)),
-    url('assets/hero-menage-sevres.jpg') center/cover no-repeat;
-  min-height: 560px;
+  overflow: hidden;
 }
-@media (max-width: 768px) {
-  .hero {
-    padding: 60px 0 80px;
-    min-height: 500px;
-    background:
-      linear-gradient(rgba(26,26,26,0.75), rgba(26,26,26,0.80)),
-      url('assets/hero-menage-sevres-mobile.jpg') center/cover no-repeat;
-  }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    radial-gradient(circle at 25% 30%, rgba(242,148,0,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 75% 70%, rgba(242,148,0,0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
-
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+}
 .hero-badge {
-  display: inline-block;
-  background: var(--axeo-orange);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(242,148,0,0.95);
   color: #fff;
   padding: 8px 18px;
-  border-radius: 50px;
+  border-radius: 100px;
+  font-size: 13px;
   font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 24px;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(242,148,0,0.4);
 }
-
 .hero h1 {
-  font-size: 48px;
-  line-height: 1.1;
+  font-size: 52px;
   font-weight: 900;
-  margin-bottom: 20px;
-  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1.5px;
 }
-.hero h1 span {
+.hero h1 .highlight {
   color: var(--axeo-orange);
-  display: block;
+  position: relative;
+  display: inline-block;
 }
-@media (max-width: 768px) {
-  .hero h1 { font-size: 32px; }
-}
-
 .hero-subtitle {
-  font-size: 19px;
-  margin-bottom: 32px;
-  opacity: 0.95;
-  max-width: 640px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 36px;
+  color: rgba(255,255,255,0.92);
+  max-width: 680px;
 }
-@media (max-width: 768px) {
-  .hero-subtitle { font-size: 16px; }
-}
+.hero-subtitle strong { color: #fff; font-weight: 700; }
 
-.cta-big {
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   background: var(--axeo-orange);
   color: #fff;
+  padding: 22px 36px;
+  border-radius: 10px;
+  text-decoration: none;
   font-weight: 800;
   font-size: 22px;
-  padding: 20px 32px;
-  border-radius: 12px;
+  letter-spacing: -0.3px;
   transition: all 0.2s;
-  box-shadow: 0 6px 24px rgba(242,148,0,0.4);
+  box-shadow: 0 8px 24px rgba(242,148,0,0.45);
 }
-.cta-big:hover {
+.btn-primary:hover {
   background: var(--axeo-orange-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 32px rgba(242,148,0,0.5);
+  box-shadow: 0 12px 32px rgba(242,148,0,0.55);
 }
-.cta-big .phone-num { color: #fff; }
-
-.cta-sub {
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  padding: 22px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  border: 2px solid rgba(255,255,255,0.3);
+  transition: all 0.2s;
+  backdrop-filter: blur(10px);
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.5);
+}
+.hero-meta {
   font-size: 14px;
-  margin-top: 12px;
-  opacity: 0.9;
+  color: rgba(255,255,255,0.75);
+  margin-top: 10px;
 }
-.cta-sub strong { color: var(--axeo-orange); }
 
-/* Trust bar */
+/* Trust bar pro */
 .trust-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 20px 32px;
-  margin-top: 36px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  font-size: 14px;
-}
-.trust-bar-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.trust-bar-item strong { color: var(--axeo-orange); font-weight: 700; }
-
-/* ═══════════════════════════════════════════════════════
-   SECTION OFFRE — bloc garantie
-   ═══════════════════════════════════════════════════════ */
-.offer-box {
-  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
-  color: #fff;
-  padding: 40px 30px;
-  border-radius: 16px;
-  text-align: center;
-  margin: -60px auto 60px;
-  max-width: 900px;
+  margin-top: 44px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.15);
   position: relative;
-  z-index: 10;
-  box-shadow: 0 12px 40px rgba(242,148,0,0.3);
+  z-index: 2;
 }
-.offer-box h2 {
-  font-size: 30px;
-  font-weight: 900;
-  margin-bottom: 12px;
-  line-height: 1.2;
-}
-@media (max-width: 768px) {
-  .offer-box h2 { font-size: 22px; }
-}
-.offer-box p { font-size: 17px; opacity: 0.95; }
-
-/* ═══════════════════════════════════════════════════════
-   SECTION 3 BÉNÉFICES
-   ═══════════════════════════════════════════════════════ */
-.section { padding: 70px 0; }
-.section-title {
-  font-size: 34px;
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 16px;
-  color: var(--axeo-black);
-  letter-spacing: -0.5px;
-}
-.section-title span { color: var(--axeo-orange); }
-.section-subtitle {
-  text-align: center;
-  color: var(--axeo-gray);
-  font-size: 17px;
-  margin-bottom: 48px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 768px) {
-  .section-title { font-size: 26px; }
-}
-
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 28px;
-}
-.benefit-card {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 32px 24px;
-  text-align: center;
-  transition: all 0.3s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-}
-.benefit-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--axeo-orange);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-}
-.benefit-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
-}
-.benefit-card h3 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-.benefit-card p { color: var(--axeo-gray); font-size: 15px; }
-
-/* ═══════════════════════════════════════════════════════
-   SECTION SERVICES
-   ═══════════════════════════════════════════════════════ */
-.bg-gray { background: var(--axeo-gray-light); }
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-.service-card {
-  background: #fff;
-  padding: 28px 24px;
-  border-radius: 10px;
-  border-left: 4px solid var(--axeo-orange);
-  transition: transform 0.2s;
-}
-.service-card.featured {
-  background: var(--axeo-black);
-  color: #fff;
-  border-left-color: var(--axeo-orange);
-  transform: scale(1.02);
-}
-.service-card:hover { transform: translateY(-3px); }
-.service-card.featured:hover { transform: scale(1.02) translateY(-3px); }
-.service-card h3 {
-  font-size: 19px;
-  font-weight: 800;
-  margin-bottom: 10px;
+.trust-item {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: rgba(255,255,255,0.92);
+  font-size: 15px;
+  font-weight: 500;
 }
-.service-card p {
-  color: var(--axeo-gray);
-  font-size: 14px;
-  line-height: 1.6;
-}
-.service-card.featured p { color: rgba(255,255,255,0.85); }
-.service-card .badge-pop {
-  display: inline-block;
-  background: var(--axeo-orange);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 20px;
-  margin-left: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.trust-item strong { color: var(--axeo-orange); font-weight: 800; }
+.trust-icon {
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-/* ═══════════════════════════════════════════════════════
-   SECTION DIFFÉRENCIATION
-   ═══════════════════════════════════════════════════════ */
-.differentiation-grid {
+@media (max-width: 768px) {
+  .hero { padding: 50px 0 70px; }
+  .hero h1 { font-size: 36px; letter-spacing: -1px; }
+  .hero-subtitle { font-size: 17px; }
+  .btn-primary { padding: 18px 24px; font-size: 18px; width: 100%; justify-content: center; }
+  .btn-secondary { padding: 16px 24px; font-size: 15px; width: 100%; justify-content: center; }
+  .trust-bar { gap: 14px 20px; }
+  .trust-item { font-size: 13px; }
+}
+
+/* ===== SECTION (générique) ===== */
+.section {
+  padding: 80px 0;
+}
+.section.bg-gray { background: var(--axeo-light); }
+.section.bg-blue {
+  background: linear-gradient(135deg, var(--axeo-blue) 0%, var(--axeo-blue-dark) 100%);
+  color: #fff;
+}
+.section-title {
+  font-size: 38px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+.section-title span { color: var(--axeo-orange); }
+.section-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: var(--axeo-gray);
+  margin-bottom: 56px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.bg-blue .section-title { color: #fff; }
+.bg-blue .section-subtitle { color: rgba(255,255,255,0.8); }
+
+@media (max-width: 768px) {
+  .section { padding: 56px 0; }
+  .section-title { font-size: 28px; }
+  .section-subtitle { font-size: 16px; margin-bottom: 36px; }
+}
+
+/* ===== OFFRE BOX ===== */
+.offer-box {
+  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
+  color: #fff;
+  padding: 32px 40px;
+  border-radius: 14px;
+  text-align: center;
+  margin: -50px auto 0;
+  max-width: 900px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 16px 48px rgba(242,148,0,0.35);
+}
+.offer-box h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.offer-box p {
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .offer-box { padding: 24px 20px; margin: -40px 16px 0; }
+  .offer-box h2 { font-size: 19px; }
+  .offer-box p { font-size: 14px; }
+}
+
+/* ===== SERVICES PROS — 4 cartes ===== */
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-top: 40px;
 }
-.diff-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
+.service-card {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  padding: 32px 28px;
+  border-radius: 14px;
+  transition: all 0.25s;
+  position: relative;
 }
-.diff-icon {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
+.service-card:hover {
+  border-color: var(--axeo-orange);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+.service-card.featured {
+  border-color: var(--axeo-orange);
+  background: linear-gradient(180deg, #fff5e6 0%, #fff 100%);
+}
+.service-card-icon {
+  font-size: 44px;
+  margin-bottom: 16px;
+  display: block;
+}
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--axeo-blue);
+  letter-spacing: -0.3px;
+}
+.service-card p {
+  color: var(--axeo-gray);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+.service-card ul li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  font-size: 14px;
+  color: #444;
+}
+.service-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--axeo-orange);
+  font-weight: 900;
+  font-size: 16px;
+}
+.badge-pop {
+  position: absolute;
+  top: -10px;
+  right: 24px;
   background: var(--axeo-orange);
   color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(242,148,0,0.4);
+}
+
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr; gap: 18px; }
+  .service-card { padding: 24px 20px; }
+  .service-card h3 { font-size: 19px; }
+}
+
+/* ===== ARNAUD BRIL — Bloc dirigeant ===== */
+.gerant-section {
+  background: #fff5e6;
+  padding: 64px 0;
+}
+.gerant-grid {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.gerant-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--axeo-blue) 0%, var(--axeo-blue-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  box-shadow: 0 12px 32px rgba(10,61,98,0.35);
+  border: 4px solid #fff;
+}
+.gerant-content .label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--axeo-orange);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.gerant-content h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 0 14px;
+  color: var(--axeo-blue);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+.gerant-content p {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.gerant-promise {
+  background: #fff;
+  padding: 18px 22px;
+  border-left: 4px solid var(--axeo-orange);
+  border-radius: 8px;
+  font-style: italic;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.gerant-promise strong { color: var(--axeo-blue); font-style: normal; }
+
+@media (max-width: 720px) {
+  .gerant-grid { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+  .gerant-avatar { margin: 0 auto; width: 120px; height: 120px; font-size: 24px; }
+  .gerant-content h2 { font-size: 24px; }
+}
+
+/* ===== COMMENT ÇA MARCHE — 3 étapes ===== */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  position: relative;
+}
+.step-card {
+  background: #fff;
+  padding: 36px 28px 32px;
+  border-radius: 14px;
+  text-align: center;
+  border: 2px solid #e5e7eb;
+  position: relative;
+  transition: all 0.25s;
+}
+.step-card:hover {
+  border-color: var(--axeo-orange);
+  transform: translateY(-4px);
+}
+.step-number {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  font-weight: 900;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 20px rgba(242,148,0,0.4);
 }
-.diff-item h4 {
-  font-size: 17px;
+.step-card h3 {
+  font-size: 20px;
   font-weight: 800;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
+  color: var(--axeo-blue);
+  letter-spacing: -0.3px;
 }
-.diff-item p { color: var(--axeo-gray); font-size: 14px; }
+.step-card p {
+  color: var(--axeo-gray);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.step-card .step-time {
+  display: inline-block;
+  margin-top: 14px;
+  background: #fff5e6;
+  color: var(--axeo-orange-dark);
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 700;
+}
 
-/* ═══════════════════════════════════════════════════════
-   SECTION AVANT / APRÈS
-   ═══════════════════════════════════════════════════════ */
-.before-after {
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: 1fr; gap: 18px; }
+}
+
+/* ===== POURQUOI NOUS — 4 piliers ===== */
+.benefits-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-top: 40px;
 }
-@media (max-width: 640px) {
-  .before-after { grid-template-columns: 1fr; }
+.benefit-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 32px 24px;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.25s;
 }
-.ba-card {
-  padding: 30px;
-  border-radius: 12px;
-  border: 2px solid;
+.benefit-card:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(242,148,0,0.4);
+  transform: translateY(-4px);
 }
-.ba-before {
-  background: #FEF2F2;
-  border-color: #FCA5A5;
-}
-.ba-after {
-  background: #F0FDF4;
-  border-color: #86EFAC;
-}
-.ba-card h4 {
-  font-size: 20px;
-  font-weight: 900;
+.benefit-icon {
+  font-size: 44px;
   margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
-.ba-before h4 { color: #991B1B; }
-.ba-after h4 { color: #166534; }
-.ba-card ul { list-style: none; }
-.ba-card li {
-  padding: 6px 0;
-  padding-left: 24px;
-  position: relative;
-  font-size: 15px;
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #fff;
+  letter-spacing: -0.3px;
 }
-.ba-before li::before { content: '✗'; position: absolute; left: 0; color: #DC2626; font-weight: 900; }
-.ba-after li::before { content: '✓'; position: absolute; left: 0; color: #16A34A; font-weight: 900; }
+.benefit-card p {
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  line-height: 1.5;
+}
 
-/* ═══════════════════════════════════════════════════════
-   SECTION AVIS
-   ═══════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .benefit-card { padding: 24px 18px; }
+}
+@media (max-width: 480px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== TÉMOIGNAGES B2B ===== */
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 40px;
 }
@@ -529,536 +698,519 @@ a { color: var(--axeo-orange); text-decoration: none; }
   background: #fff;
   padding: 28px 24px;
   border-radius: 12px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  border: 2px solid #e5e7eb;
+  transition: all 0.25s;
 }
-.review-stars { color: #FFC107; font-size: 18px; margin-bottom: 12px; letter-spacing: 2px; }
+.review-card:hover {
+  border-color: var(--axeo-orange);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+.review-stars {
+  color: var(--axeo-orange);
+  font-size: 18px;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
 .review-text {
   font-size: 15px;
-  font-style: italic;
-  color: #333;
-  margin-bottom: 16px;
   line-height: 1.6;
+  color: #333;
+  margin-bottom: 18px;
+  font-style: italic;
 }
 .review-author {
+  font-size: 14px;
+  color: var(--axeo-blue);
+  font-weight: 700;
+}
+.review-author span {
+  display: block;
+  font-weight: 500;
   font-size: 13px;
   color: var(--axeo-gray);
-  font-weight: 600;
+  margin-top: 2px;
 }
-.review-author strong { color: var(--axeo-black); font-weight: 800; }
 
-/* ═══════════════════════════════════════════════════════
-   SECTION FAQ
-   ═══════════════════════════════════════════════════════ */
-.faq-list {
+@media (max-width: 768px) {
+  .reviews-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+
+/* ===== ZONES DESSERVIES ===== */
+.zones-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+}
+.zone-pill {
+  background: #fff;
+  border: 2px solid var(--axeo-orange);
+  color: var(--axeo-blue);
+  padding: 10px 22px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.zone-pill:hover {
+  background: var(--axeo-orange);
+  color: #fff;
+}
+
+/* ===== FAQ ===== */
+.faq-grid {
   max-width: 820px;
   margin: 40px auto 0;
 }
 .faq-item {
   background: #fff;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  margin-bottom: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 14px;
   overflow: hidden;
+  transition: border-color 0.2s;
 }
-.faq-question {
-  padding: 20px 24px;
-  cursor: pointer;
+.faq-item[open] {
+  border-color: var(--axeo-orange);
+}
+.faq-item summary {
+  padding: 22px 24px;
   font-weight: 700;
   font-size: 17px;
+  color: var(--axeo-blue);
+  cursor: pointer;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 0.2s;
+  user-select: none;
 }
-.faq-question:hover { background: var(--axeo-gray-light); }
-.faq-question::after {
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
   content: '+';
   font-size: 28px;
-  color: var(--axeo-orange);
   font-weight: 300;
-  transition: transform 0.3s;
+  color: var(--axeo-orange);
+  transition: transform 0.2s;
 }
-.faq-item.open .faq-question::after { transform: rotate(45deg); }
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  padding: 0 24px;
+.faq-item[open] summary::after {
+  content: '−';
 }
-.faq-item.open .faq-answer {
-  max-height: 400px;
-  padding: 0 24px 20px;
-}
-.faq-answer p { color: var(--axeo-gray); font-size: 15px; }
-
-/* ═══════════════════════════════════════════════════════
-   SECTION FORMULAIRE + ZONE
-   ═══════════════════════════════════════════════════════ */
-.form-zone-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 40px;
-}
-@media (max-width: 768px) {
-  .form-zone-grid { grid-template-columns: 1fr; }
-}
-
-.form-card {
-  background: #fff;
-  padding: 36px 30px;
-  border-radius: 14px;
-  border: 2px solid var(--axeo-orange);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-}
-.form-card h3 {
-  font-size: 24px;
-  font-weight: 900;
-  margin-bottom: 8px;
-}
-.form-card p { color: var(--axeo-gray); margin-bottom: 24px; font-size: 15px; }
-
-.form-group { margin-bottom: 16px; }
-.form-group label {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.faq-item .faq-answer {
+  padding: 0 24px 24px;
+  color: #444;
   font-size: 15px;
-  font-family: inherit;
-  transition: border 0.2s;
+  line-height: 1.7;
 }
-.form-group input:focus,
-.form-group select:focus {
-  outline: none;
-  border-color: var(--axeo-orange);
-  box-shadow: 0 0 0 3px rgba(242,148,0,0.15);
-}
-.form-consent {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  font-size: 13px;
-  color: var(--axeo-gray);
-}
-.form-consent input { margin-top: 3px; flex-shrink: 0; }
-.form-consent a { color: var(--axeo-orange); text-decoration: underline; }
 
-.btn-submit {
-  width: 100%;
-  background: var(--axeo-orange);
+/* ===== FORMULAIRE PRO ===== */
+.contact-section {
+  background: linear-gradient(135deg, var(--axeo-blue) 0%, var(--axeo-blue-dark) 100%);
+  padding: 80px 0;
   color: #fff;
-  border: none;
-  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle at 75% 25%, rgba(242,148,0,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.contact-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+.contact-intro h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 18px;
+  letter-spacing: -0.8px;
+  line-height: 1.15;
+  color: #fff;
+}
+.contact-intro h2 span { color: var(--axeo-orange); }
+.contact-intro p {
   font-size: 17px;
-  font-weight: 800;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s;
-  font-family: inherit;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 28px;
 }
-.btn-submit:hover:not(:disabled) {
-  background: var(--axeo-orange-dark);
-  transform: translateY(-1px);
+.contact-points {
+  list-style: none;
+  padding: 0;
 }
-.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
-
-#form-error {
-  display: none;
-  background: #FEF2F2;
-  color: var(--danger);
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  font-size: 14px;
+.contact-points li {
+  padding: 12px 0 12px 36px;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
 }
-#form-merci {
-  display: none;
-  text-align: center;
-  padding: 40px 20px;
-}
-#form-merci h3 { color: var(--success); font-size: 26px; margin-bottom: 10px; }
-#form-merci p { color: var(--axeo-gray); font-size: 16px; }
-#form-merci .check-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 16px;
-  background: var(--success);
+.contact-points li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 24px;
+  height: 24px;
+  background: var(--axeo-orange);
   color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 36px;
+  font-weight: 900;
+  font-size: 13px;
 }
+.contact-points li strong { color: var(--axeo-orange); font-weight: 700; }
 
-.zone-card {
-  background: var(--axeo-black);
-  color: #fff;
-  padding: 36px 30px;
-  border-radius: 14px;
+.form-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.25);
 }
-.zone-card h3 {
+.form-card h3 {
+  color: var(--axeo-blue);
   font-size: 22px;
-  font-weight: 900;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.zone-list {
-  list-style: none;
-  columns: 2;
-  gap: 16px;
-}
-.zone-list li {
-  padding: 8px 0;
-  padding-left: 22px;
-  position: relative;
-  font-size: 15px;
-}
-.zone-list li::before {
-  content: '📍';
-  position: absolute;
-  left: 0;
-  font-size: 14px;
-}
-.zone-info {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.15);
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-/* ═══════════════════════════════════════════════════════
-   CTA FINAL
-   ═══════════════════════════════════════════════════════ */
-.cta-final {
-  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-}
-.cta-final h2 {
-  font-size: 38px;
-  font-weight: 900;
-  margin-bottom: 16px;
-  letter-spacing: -0.5px;
-}
-.cta-final p { font-size: 19px; margin-bottom: 32px; opacity: 0.95; }
-.cta-final .cta-big {
-  background: #fff;
-  color: var(--axeo-orange);
-  font-size: 24px;
-  padding: 22px 40px;
-}
-.cta-final .cta-big .phone-num { color: var(--axeo-orange); }
-.cta-final .cta-big:hover { background: var(--axeo-gray-light); transform: translateY(-2px); }
-@media (max-width: 768px) {
-  .cta-final h2 { font-size: 26px; }
-  .cta-final .cta-big { font-size: 19px; padding: 18px 24px; }
-}
-
-/* ═══════════════════════════════════════════════════════
-   STICKY BAR MOBILE
-   ═══════════════════════════════════════════════════════ */
-.sticky-mobile {
-  display: none;
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  background: #fff;
-  box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
-  z-index: 1000;
-  padding: 8px;
-  gap: 8px;
-}
-.sticky-mobile a {
-  flex: 1;
-  text-align: center;
-  padding: 14px 8px;
-  border-radius: 10px;
   font-weight: 800;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
 }
-.sticky-tel {
+.form-card .form-sub {
+  color: var(--axeo-gray);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.form-row { margin-bottom: 16px; }
+.form-row label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--axeo-blue);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--axeo-orange);
+  box-shadow: 0 0 0 3px rgba(242,148,0,0.15);
+}
+.form-row textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.form-rgpd {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: var(--axeo-gray);
+  line-height: 1.5;
+}
+.form-rgpd input { margin-top: 3px; flex-shrink: 0; }
+.form-rgpd a { color: var(--axeo-orange); }
+.form-submit {
+  width: 100%;
   background: var(--axeo-orange);
   color: #fff;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: -0.2px;
+  box-shadow: 0 6px 20px rgba(242,148,0,0.35);
 }
-.sticky-tel .phone-num { color: #fff; }
-.sticky-form {
-  background: var(--axeo-black);
+.form-submit:hover {
+  background: var(--axeo-orange-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(242,148,0,0.45);
+}
+.form-submit:disabled { opacity: 0.6; cursor: wait; transform: none; }
+.form-success {
+  background: var(--axeo-success);
   color: #fff;
-}
-@media (max-width: 768px) {
-  .sticky-mobile { display: flex; }
+  padding: 22px 18px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  display: none;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* ═══════════════════════════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .contact-intro h2 { font-size: 28px; }
+  .form-card { padding: 28px 22px; }
+  .form-row-2col { grid-template-columns: 1fr; }
+}
+
+/* ===== FOOTER ===== */
 .footer {
-  background: var(--axeo-black);
-  color: #fff;
-  padding: 50px 0 30px;
+  background: #0a0a0a;
+  color: #888;
+  padding: 60px 0 30px;
   font-size: 14px;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 32px;
-  margin-bottom: 30px;
-}
-@media (max-width: 768px) {
-  .footer-grid { grid-template-columns: 1fr; }
+  gap: 40px;
+  margin-bottom: 40px;
 }
 .footer h4 {
-  font-size: 16px;
-  font-weight: 800;
-  margin-bottom: 14px;
   color: var(--axeo-orange);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.footer p, .footer li { color: rgba(255,255,255,0.75); line-height: 1.7; }
-.footer ul { list-style: none; }
-.footer a { color: rgba(255,255,255,0.75); transition: color 0.2s; }
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+}
 .footer a:hover { color: var(--axeo-orange); }
 .footer-bottom {
   padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid #2a2a2a;
   text-align: center;
-  font-size: 12px;
-  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  color: #666;
 }
 
-/* ═══════════════════════════════════════════════════════
-   BANDEAU CNIL COOKIES
-   ═══════════════════════════════════════════════════════ */
-#cookie-banner {
-  display: none;
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* ===== COOKIE BANNER ===== */
+.cookie-banner {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  background: var(--axeo-black);
+  background: rgba(10,10,10,0.97);
+  backdrop-filter: blur(10px);
   color: #fff;
-  padding: 20px;
+  padding: 18px 24px;
   z-index: 9999;
-  box-shadow: 0 -6px 24px rgba(0,0,0,0.3);
+  display: none;
+  border-top: 3px solid var(--axeo-orange);
 }
-#cookie-banner.show { display: block; }
 .cookie-inner {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
-.cookie-text { flex: 1; min-width: 280px; font-size: 14px; }
-.cookie-text a { color: var(--axeo-orange); text-decoration: underline; }
-.cookie-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+.cookie-text { flex: 1; font-size: 14px; min-width: 280px; }
+.cookie-text a { color: var(--axeo-orange); }
+.cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
 .cookie-btn {
-  padding: 10px 18px;
-  border-radius: 8px;
+  padding: 11px 22px;
+  border: 0;
+  border-radius: 6px;
   font-weight: 700;
-  font-size: 14px;
   cursor: pointer;
-  border: none;
+  font-size: 14px;
   transition: all 0.2s;
-  font-family: inherit;
 }
+.cookie-refuse {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #555;
+}
+.cookie-refuse:hover { background: #2a2a2a; }
 .cookie-accept {
   background: var(--axeo-orange);
   color: #fff;
 }
 .cookie-accept:hover { background: var(--axeo-orange-dark); }
-.cookie-refuse {
-  background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.3);
-}
-.cookie-refuse:hover { background: rgba(255,255,255,0.1); }
-@media (max-width: 640px) {
-  #cookie-banner { padding: 16px; padding-bottom: 90px; }
-  .cookie-buttons { width: 100%; }
-  .cookie-btn { flex: 1; }
-}
 </style>
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
+<!-- GTM noscript -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-SEVRES-A-REMPLIR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <!-- ═══════════════════════════════════════════════════════
      HEADER
      ═══════════════════════════════════════════════════════ -->
 <header class="header">
   <div class="container header-inner">
-    <div class="logo">
+    <a href="/" class="logo" aria-label="Accueil AXEO Services Sèvres">
       <img src="assets/logo-axeo.jpg" alt="AXEO Services" class="logo-axeo">
       <img src="assets/logo-laposte.jpg" alt="Filiale La Poste" class="logo-poste">
-      <div class="logo-city">Sèvres<small>92310</small></div>
-    </div>
-    <a class="header-phone" href="tel:+33146269675" onclick="return callClick('header')">
-      📞 <span class="phone-num">01 46 26 96 75</span>
+      <div class="logo-tagline">
+        Sèvres
+        <small>Services aux Pros</small>
+      </div>
+    </a>
+    <a href="tel:+33146269675" class="header-cta phone-num" aria-label="Appeler AXEO Services Sèvres Pro">
+      📞 01 46 26 96 75
     </a>
   </div>
 </header>
 
 <!-- ═══════════════════════════════════════════════════════
-     HERO
+     HERO PRO
      ═══════════════════════════════════════════════════════ -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-badge">⚡ Intervention sous 48h · Sèvres &amp; communes limitrophes</div>
-    <h1>
-      Ménage à domicile à Sèvres —
-      <span>service clé en main</span>
+  <div class="container hero-content">
+    <div class="hero-badge">⚡ Devis sous 24h · Intervention sous 72h</div>
+    <h1>Nettoyage de bureaux & locaux professionnels<br>
+      <span class="highlight">à Sèvres et Hauts-de-Seine</span>
     </h1>
     <p class="hero-subtitle">
-      Intervenants de confiance, formés, assurés. <strong>Devis gratuit en 1h</strong>,
-      première intervention sous 48h. Profitez du <strong>crédit d'impôt 50%</strong>.
+      Bureaux, copropriétés, commerces, remise en état de chantier — <strong>équipes salariées formées</strong>,
+      <strong>cahier des charges sur mesure</strong>, et la solidité du <strong>réseau AXEO Services, filiale La Poste</strong>.
     </p>
-    <a class="cta-big" href="tel:+33146269675" onclick="return callClick('hero')">
-      📞 <span class="phone-num">01 46 26 96 75</span>
-    </a>
-    <div class="cta-sub">
-      Ou <a href="#contact" style="color:#fff;text-decoration:underline;">être rappelé gratuitement</a> · <strong>Réponse immédiate, sans engagement</strong>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">📋 Devis gratuit en 24h</a>
+      <a href="tel:+33146269675" class="btn-secondary phone-num">📞 01 46 26 96 75</a>
+    </div>
+    <div class="hero-meta">
+      Visite technique gratuite sous 72h · Sans engagement · Réponse immédiate
     </div>
 
     <div class="trust-bar">
-      <div class="trust-bar-item">⭐ <strong>4.5/5</strong> · 50+ avis Google</div>
-      <div class="trust-bar-item">🏢 Filiale <strong>La Poste</strong></div>
-      <div class="trust-bar-item">💰 <strong>50% crédit d'impôt</strong> SAP</div>
-      <div class="trust-bar-item">📅 <strong>Depuis 2016</strong> à Sèvres</div>
+      <div class="trust-item"><span class="trust-icon">🏢</span> Filiale <strong>La Poste</strong></div>
+      <div class="trust-item"><span class="trust-icon">✅</span> Certifié <strong>Qualicert</strong></div>
+      <div class="trust-item"><span class="trust-icon">👔</span> 100% <strong>personnel salarié</strong></div>
+      <div class="trust-item"><span class="trust-icon">🌿</span> Produits <strong>écolabel</strong></div>
+      <div class="trust-item"><span class="trust-icon">🛡️</span> Assurance <strong>RC Pro</strong></div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     OFFRE / PROMESSE
+     PROMESSE
      ═══════════════════════════════════════════════════════ -->
 <div class="container">
   <div class="offer-box">
-    <h2>Devis gratuit en 1h garanti. Première intervention sous 48h.</h2>
-    <p>Pas satisfait du premier passage ? On revient corriger — gratuitement.</p>
+    <h2>Visite technique sur site sous 72h. Devis personnalisé sous 24h.</h2>
+    <p>Insatisfait d'une prestation ? On la <strong>refait gratuitement</strong> sous 48h. Garantie réseau AXEO.</p>
   </div>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
-     3 BÉNÉFICES
+     SERVICES PROS — 4 piliers
      ═══════════════════════════════════════════════════════ -->
-<section class="section">
+<section class="section" id="services">
   <div class="container">
-    <h2 class="section-title">Pourquoi choisir <span>AXEO Services Sèvres</span></h2>
+    <h2 class="section-title">Nos <span>4 services</span> pour les professionnels</h2>
     <p class="section-subtitle">
-      Notre agence locale de Sèvres gère vos interventions de A à Z. Un seul interlocuteur,
-      des intervenants formés, un engagement qualité signé AXEO.
+      TPE, PME, syndics, commerçants, artisans : nous adaptons nos prestations à votre activité,
+      vos horaires et votre cahier des charges.
     </p>
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <div class="benefit-icon">🎯</div>
-        <h3>Un seul interlocuteur</h3>
-        <p>Notre équipe gère tout : planning, remplacements, facturation. Fini le téléphone arabe entre 5 prestataires.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">⏱️</div>
-        <h3>Délais garantis</h3>
-        <p>Intervention sous 48h. En cas de retard ou absence, remplacement immédiat par un autre intervenant formé.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">💰</div>
-        <h3>50% crédit d'impôt</h3>
-        <p>Service à la personne agréé : votre facture est divisée par deux grâce au crédit d'impôt automatique.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
-     SERVICES
-     ═══════════════════════════════════════════════════════ -->
-<section class="section bg-gray" id="services">
-  <div class="container">
-    <h2 class="section-title">Nos <span>services à domicile</span> à Sèvres</h2>
-    <p class="section-subtitle">Tous nos services ouvrent droit au crédit d'impôt de 50%.</p>
     <div class="services-grid">
       <div class="service-card featured">
-        <h3>🧹 Ménage à domicile <span class="badge-pop">★ Populaire</span></h3>
-        <p>Entretien régulier ou ponctuel de votre logement. Sols, vitres, cuisine, salle de bain, chambres. Matériel et produits fournis.</p>
+        <span class="badge-pop">★ Demande #1</span>
+        <span class="service-card-icon">🏢</span>
+        <h3>Nettoyage de bureaux</h3>
+        <p>Entretien régulier de vos locaux : sols, sanitaires, cuisines, espaces communs, vitrerie intérieure.</p>
+        <ul>
+          <li>Interventions tôt matin / soir / weekend</li>
+          <li>Cahier des charges sur-mesure</li>
+          <li>Approvisionnement consommables inclus</li>
+          <li>Reporting d'intervention par mail</li>
+        </ul>
       </div>
       <div class="service-card">
-        <h3>👔 Repassage</h3>
-        <p>À domicile ou repassage externalisé. Linge plié et rangé avec soin.</p>
+        <span class="service-card-icon">🏘️</span>
+        <h3>Entretien copropriétés</h3>
+        <p>Halls, escaliers, ascenseurs, parties communes, sortie de poubelles. Contrats avec syndics.</p>
+        <ul>
+          <li>Syndics professionnels & bénévoles</li>
+          <li>Multi-sites et multi-immeubles</li>
+          <li>Engagements contractuels stables</li>
+          <li>Référent unique pour le syndic</li>
+        </ul>
       </div>
       <div class="service-card">
-        <h3>👵 Aide à domicile seniors</h3>
-        <p>Accompagnement, aide aux repas, ménage adapté, course. Pour un maintien à domicile serein.</p>
+        <span class="service-card-icon">🛒</span>
+        <h3>Nettoyage de commerces</h3>
+        <p>Boutiques, restaurants, cabinets médicaux, salles de sport. Avant ou après ouverture.</p>
+        <ul>
+          <li>Vitrines & enseignes</li>
+          <li>Désinfection HACCP (resto/médical)</li>
+          <li>Gestion des consommables</li>
+          <li>Adapté à vos horaires d'activité</li>
+        </ul>
       </div>
       <div class="service-card">
-        <h3>🌿 Jardinage</h3>
-        <p>Entretien espaces verts, tonte, taille, ramassage feuilles. Petits jardins et terrasses.</p>
-      </div>
-      <div class="service-card">
-        <h3>🔧 Petit bricolage</h3>
-        <p>Montage de meubles, fixation d'étagères, changement d'ampoules, petites réparations.</p>
-      </div>
-      <div class="service-card">
-        <h3>👶 Garde d'enfants</h3>
-        <p>Sortie d'école, aide aux devoirs, garde à domicile. Intervenants expérimentés.</p>
+        <span class="service-card-icon">🔨</span>
+        <h3>Remise en état chantier</h3>
+        <p>Fin de travaux, post-déménagement, locaux vacants. Nettoyage complet et profond avant remise.</p>
+        <ul>
+          <li>Nettoyage post-construction</li>
+          <li>Élimination poussières fines</li>
+          <li>Vitrerie intérieure & extérieure</li>
+          <li>Devis ferme avant intervention</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     DIFFÉRENCIATION
+     BLOC CORPORATE — Engagement réseau
      ═══════════════════════════════════════════════════════ -->
-<section class="section">
+<section class="gerant-section">
   <div class="container">
-    <h2 class="section-title">Ce qui fait la <span>différence AXEO</span></h2>
-    <div class="differentiation-grid">
-      <div class="diff-item">
-        <div class="diff-icon">✓</div>
-        <div>
-          <h4>Filiale La Poste</h4>
-          <p>Solidité, éthique et engagement qualité d'un grand groupe français.</p>
-        </div>
-      </div>
-      <div class="diff-item">
-        <div class="diff-icon">✓</div>
-        <div>
-          <h4>Intervenants formés et assurés</h4>
-          <p>Tous nos intervenants sont salariés de l'agence, formés et couverts par notre assurance.</p>
-        </div>
-      </div>
-      <div class="diff-item">
-        <div class="diff-icon">✓</div>
-        <div>
-          <h4>Pas de contrat piégeux</h4>
-          <p>Engagement mensuel, résiliable à tout moment. Pas de frais cachés.</p>
-        </div>
-      </div>
-      <div class="diff-item">
-        <div class="diff-icon">✓</div>
-        <div>
-          <h4>Remplacements gérés</h4>
-          <p>Absence de votre intervenant ? Remplacement assuré par l'agence en 24h.</p>
+    <div class="gerant-grid">
+      <div class="gerant-avatar">AXEO</div>
+      <div class="gerant-content">
+        <span class="label">⚡ Visite technique gratuite sous 72h</span>
+        <h2>Un interlocuteur unique. Un cahier des charges sur mesure.</h2>
+        <p>
+          Bicotin Services exploite l'agence AXEO Services Sèvres depuis 2016. Notre responsable d'agence
+          se déplace personnellement chez chaque nouveau client pro pour étudier votre site, vos contraintes
+          d'horaires et établir un <strong>cahier des charges sur mesure</strong>. Pas de commercial intermédiaire,
+          pas de devis générique.
+        </p>
+        <div class="gerant-promise">
+          <strong>Notre engagement :</strong> visite technique sur site sous 72h — devis détaillé sous 24h
+          après visite — démarrage des prestations sous 7 jours après validation. Le tout avec
+          <strong>la solidité d'AXEO Services, filiale du groupe La Poste</strong>.
         </div>
       </div>
     </div>
@@ -1066,58 +1218,131 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     AVANT / APRÈS
+     COMMENT ÇA MARCHE — 3 étapes
      ═══════════════════════════════════════════════════════ -->
 <section class="section bg-gray">
   <div class="container">
-    <h2 class="section-title">Avant / Après avec <span>AXEO Sèvres</span></h2>
-    <div class="before-after">
-      <div class="ba-card ba-before">
-        <h4>😩 Sans AXEO</h4>
-        <ul>
-          <li>Votre intervenante annule, personne ne vient</li>
-          <li>Pas de remplacement, vous devez tout gérer</li>
-          <li>Aucune facture RGPD → pas de crédit d'impôt</li>
-          <li>Paiement en espèces, pas de garantie</li>
-          <li>Qualité variable, pas de contrôle</li>
-        </ul>
+    <h2 class="section-title">Comment <span>ça marche</span> ?</h2>
+    <p class="section-subtitle">3 étapes simples pour démarrer un contrat d'entretien professionnel.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Vous nous contactez</h3>
+        <p>Par téléphone ou via le formulaire. Premier échange pour comprendre votre activité et vos besoins.</p>
+        <span class="step-time">⚡ Réponse sous 2h</span>
       </div>
-      <div class="ba-card ba-after">
-        <h4>😊 Avec AXEO Sèvres</h4>
-        <ul>
-          <li>Intervention garantie, remplacement sous 24h</li>
-          <li>Un seul interlocuteur qui gère tout</li>
-          <li>Facture déductible, crédit d'impôt automatique</li>
-          <li>Prélèvement mensuel, intervenants assurés</li>
-          <li>Suivi qualité agence, ajustements possibles</li>
-        </ul>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Visite technique sur site</h3>
+        <p>Notre responsable d'agence se déplace chez vous, étudie les surfaces, contraintes d'horaires et matériel nécessaire.</p>
+        <span class="step-time">📅 Sous 72h</span>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Devis & démarrage</h3>
+        <p>Cahier des charges précis, devis détaillé. Démarrage des prestations à la date convenue.</p>
+        <span class="step-time">✅ Sous 7 jours</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     AVIS CLIENTS
+     POURQUOI NOUS — 4 piliers (sur fond bleu)
      ═══════════════════════════════════════════════════════ -->
-<section class="section">
+<section class="section bg-blue">
   <div class="container">
-    <h2 class="section-title">Ce que disent <span>nos clients</span></h2>
-    <p class="section-subtitle">4.5/5 sur Google · Plus de 50 avis</p>
+    <h2 class="section-title">Pourquoi <span>AXEO Services Pro</span> ?</h2>
+    <p class="section-subtitle">
+      La force d'un réseau national, la proximité d'une entreprise locale, l'engagement qualité La Poste.
+    </p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🏢</div>
+        <h3>Filiale La Poste</h3>
+        <p>Solidité financière et engagement qualité d'un grand groupe national. Garantie satisfait ou refait.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">👔</div>
+        <h3>Personnel salarié</h3>
+        <p>Pas d'auto-entrepreneurs ni sous-traitants. 95% des collaborateurs en CDI, formés et encadrés.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">✅</div>
+        <h3>Certification Qualicert</h3>
+        <p>Audits qualité réguliers. Procédures techniques éprouvées. Reporting d'intervention transparent.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🌿</div>
+        <h3>Produits écolabel</h3>
+        <p>Produits certifiés Écolabel européen. Réduction de l'empreinte environnementale de vos prestations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     ZONES DESSERVIES
+     ═══════════════════════════════════════════════════════ -->
+<section class="section" id="zones">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-title">Nous intervenons à <span>Sèvres et alentours</span></h2>
+    <p class="section-subtitle">
+      Nos équipes sont déployées sur l'ouest des Hauts-de-Seine. Pour une commune limitrophe non listée, contactez-nous.
+    </p>
+    <div class="zones-list">
+      <div class="zone-pill">Sèvres (92310)</div>
+      <div class="zone-pill">Meudon</div>
+      <div class="zone-pill">Chaville</div>
+      <div class="zone-pill">Ville-d'Avray</div>
+      <div class="zone-pill">Vaucresson</div>
+      <div class="zone-pill">Boulogne-Billancourt</div>
+      <div class="zone-pill">Issy-les-Moulineaux</div>
+      <div class="zone-pill">Marnes-la-Coquette</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TÉMOIGNAGES B2B
+     ═══════════════════════════════════════════════════════ -->
+<section class="section bg-gray">
+  <div class="container">
+    <h2 class="section-title">Ils nous font <span>confiance</span></h2>
+    <p class="section-subtitle">Quelques retours de nos clients professionnels à Sèvres et environs.</p>
     <div class="reviews-grid">
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Très professionnelle, ponctuelle et minutieuse. Notre intervenante est un bijou. Très bonne communication avec l'agence."</p>
-        <div class="review-author"><strong>Sophie L.</strong> · Sèvres</div>
+        <p class="review-text">
+          « Contrat hebdomadaire pour notre cabinet d'avocats. Équipe ponctuelle, discrète, qualité constante.
+          Le suivi par l'équipe AXEO est un vrai plus. »
+        </p>
+        <div class="review-author">
+          Cabinet juridique
+          <span>Sèvres · Client depuis 2022</span>
+        </div>
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Service impeccable pour ma maman de 87 ans. L'équipe AXEO est à l'écoute et s'adapte aux besoins. Je recommande vivement."</p>
-        <div class="review-author"><strong>Thierry M.</strong> · Meudon</div>
+        <p class="review-text">
+          « Nous avons confié l'entretien de 3 immeubles à AXEO. Parties communes nickel, sortie poubelles
+          jamais oubliée. Le syndic et les copropriétaires sont satisfaits. »
+        </p>
+        <div class="review-author">
+          Syndic professionnel
+          <span>Boulogne-Billancourt</span>
+        </div>
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Agence sérieuse, réactive. Devis reçu sous 1h, première intervention 2 jours plus tard. Très satisfaite du ménage."</p>
-        <div class="review-author"><strong>Claire D.</strong> · Chaville</div>
+        <p class="review-text">
+          « Remise en état post-travaux dans nos locaux commerciaux à Meudon. Travail nickel,
+          délais respectés au jour près. Je recommande. »
+        </p>
+        <div class="review-author">
+          Boutique de prêt-à-porter
+          <span>Meudon</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1126,147 +1351,150 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══════════════════════════════════════════════════════
      FAQ
      ═══════════════════════════════════════════════════════ -->
-<section class="section bg-gray">
+<section class="section" id="faq">
   <div class="container">
-    <h2 class="section-title">Vos questions — <span>nos réponses</span></h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">Combien coûte une heure de ménage ?</div>
+    <h2 class="section-title">Vos questions, nos <span>réponses</span></h2>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>Quel est le tarif moyen pour un nettoyage de bureaux ?</summary>
         <div class="faq-answer">
-          <p>Nos tarifs démarrent à 25€/h en ménage classique. <strong>Après crédit d'impôt de 50%</strong>, votre coût réel est de <strong>12,50€/h</strong>. Un devis personnalisé est fait sous 1h en fonction de votre logement et de la fréquence.</p>
+          Nos tarifs dépendent de la surface, de la fréquence d'intervention et du cahier des charges.
+          À titre indicatif, un bureau de 100 m² nettoyé 3 fois par semaine se situe entre 350 € et 600 € HT/mois.
+          Devis ferme et personnalisé après visite technique gratuite.
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">Combien de temps pour la première intervention ?</div>
+      </details>
+      <details class="faq-item">
+        <summary>Pouvez-vous intervenir en dehors des heures de bureau ?</summary>
         <div class="faq-answer">
-          <p>Sous <strong>48h maximum</strong> après validation du devis. Pour les aides urgentes (sortie hospitalisation, aide seniors), on peut intervenir <strong>sous 24h</strong> selon disponibilité.</p>
+          Oui, c'est même notre standard pour la plupart des entreprises clientes. Nous intervenons
+          tôt le matin (avant 8h), en soirée (après 18h), le samedi ou le dimanche selon votre activité.
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">Comment fonctionne le crédit d'impôt de 50% ?</div>
+      </details>
+      <details class="faq-item">
+        <summary>Y a-t-il un engagement contractuel obligatoire ?</summary>
         <div class="faq-answer">
-          <p>AXEO est agréé Service à la Personne. Chaque euro dépensé chez nous ouvre droit à <strong>50% de crédit d'impôt</strong>, même si vous n'êtes pas imposable. Vous payez 25€/h, vous récupérez 12,50€ au prélèvement mensuel via l'avance immédiate (URSSAF).</p>
+          Pour les contrats récurrents (entretien hebdomadaire ou mensuel), nous proposons un engagement
+          minimum de 3 mois renouvelable, dénonçable avec un préavis d'1 mois. Pour les prestations ponctuelles
+          (remise en état, vitrerie), aucun engagement.
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">Et si l'intervenant ne vient pas ?</div>
+      </details>
+      <details class="faq-item">
+        <summary>Vos équipes sont-elles couvertes par une assurance ?</summary>
         <div class="faq-answer">
-          <p>Nos intervenants sont salariés de l'agence. En cas d'absence (maladie, congés), l'<strong>agence gère le remplacement sous 24h</strong>. Vous n'avez rien à organiser.</p>
+          Oui, l'ensemble de nos intervenants est couvert par notre assurance Responsabilité Civile
+          Professionnelle (Generali). En cas de dommage matériel constaté, nous prenons immédiatement
+          en charge le sinistre.
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">Quelles communes couvrez-vous ?</div>
+      </details>
+      <details class="faq-item">
+        <summary>Fournissez-vous le matériel et les produits ?</summary>
         <div class="faq-answer">
-          <p>Sèvres, Meudon, Meudon-la-Forêt, Chaville, Ville-d'Avray, Vaucresson, Marnes-la-Coquette. Pour une commune limitrophe, contactez-nous — c'est souvent possible.</p>
+          Oui, l'ensemble du matériel (aspirateur, mono-brosse, chariots…) et des produits (sols, sanitaires,
+          vitres, désinfectants) est fourni et stocké chez vous dans un placard dédié. Nous utilisons des
+          produits certifiés Écolabel européen quand c'est possible.
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">Puis-je résilier facilement ?</div>
+      </details>
+      <details class="faq-item">
+        <summary>Êtes-vous éligible au mécénat / déduction fiscale ?</summary>
         <div class="faq-answer">
-          <p>Oui. Aucun engagement de durée. Résiliation possible sur <strong>simple email</strong> avec un mois de préavis. Pas de frais cachés.</p>
+          Les prestations de nettoyage professionnel sont des charges déductibles classiques pour votre
+          entreprise (charges externes). Pour les particuliers, c'est notre <strong>offre services à la personne</strong>
+          qui ouvre droit au crédit d'impôt de 50%.
         </div>
-      </div>
+      </details>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     FORMULAIRE + ZONE
+     CONTACT / FORMULAIRE PRO
      ═══════════════════════════════════════════════════════ -->
-<section class="section" id="contact">
+<section class="contact-section" id="contact">
   <div class="container">
-    <h2 class="section-title">Demandez votre <span>devis gratuit</span></h2>
-    <p class="section-subtitle">Réponse sous 1h ouvré. Sans engagement.</p>
-
-    <div class="form-zone-grid">
-
+    <div class="contact-grid">
+      <div class="contact-intro">
+        <h2>Demandez votre <span>devis pro</span><br>en 24h.</h2>
+        <p>
+          Remplissez ce formulaire en 2 minutes — notre responsable d'agence vous rappelle dans la journée pour
+          organiser une visite technique gratuite sur site.
+        </p>
+        <ul class="contact-points">
+          <li><strong>Visite gratuite</strong> sous 72h sur votre site</li>
+          <li><strong>Devis détaillé</strong> sous 24h après visite</li>
+          <li><strong>Démarrage</strong> sous 7 jours après validation</li>
+          <li><strong>Sans engagement</strong> au premier contact</li>
+        </ul>
+      </div>
       <div class="form-card">
-        <h3>Être rappelé gratuitement</h3>
-        <p>On vous rappelle dans l'heure. Sans engagement.</p>
+        <h3>📋 Recevoir un devis pro</h3>
+        <p class="form-sub">Réponse personnalisée sous 24h ouvrées par notre responsable d'agence.</p>
+        <form id="leadForm">
+          <input type="hidden" name="client_slug" value="axeo-sevres-pro">
+          <input type="hidden" name="page" value="https://www.axeo-sevres.fr/">
 
-        <div id="form-contact">
-          <div id="form-error">⚠️ Veuillez remplir tous les champs obligatoires.</div>
-
-          <div class="form-group">
-            <label for="prenom">Prénom *</label>
-            <input type="text" id="prenom" name="prenom" required>
+          <div class="form-row">
+            <label>Société *</label>
+            <input type="text" name="societe" required placeholder="Nom de votre entreprise">
           </div>
 
-          <div class="form-group">
-            <label for="telephone">Téléphone *</label>
-            <input type="tel" id="telephone" name="telephone" required placeholder="06 12 34 56 78">
+          <div class="form-row-2col">
+            <div class="form-row">
+              <label>Prénom *</label>
+              <input type="text" name="prenom" required placeholder="Votre prénom">
+            </div>
+            <div class="form-row">
+              <label>Nom *</label>
+              <input type="text" name="nom" required placeholder="Votre nom">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="service">Service souhaité *</label>
-            <select id="service" name="service" required>
-              <option value="">— Sélectionner —</option>
-              <option value="Ménage à domicile">Ménage à domicile</option>
-              <option value="Repassage">Repassage</option>
-              <option value="Aide seniors">Aide à domicile seniors</option>
-              <option value="Jardinage">Jardinage</option>
-              <option value="Bricolage">Petit bricolage</option>
-              <option value="Garde enfants">Garde d'enfants</option>
-              <option value="Plusieurs services">Plusieurs services</option>
+          <div class="form-row-2col">
+            <div class="form-row">
+              <label>Téléphone *</label>
+              <input type="tel" name="telephone" required placeholder="06 12 34 56 78">
+            </div>
+            <div class="form-row">
+              <label>Email *</label>
+              <input type="email" name="email" required placeholder="vous@societe.fr">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Type de besoin *</label>
+            <select name="service" required>
+              <option value="">Sélectionnez…</option>
+              <option value="Nettoyage de bureaux">🏢 Nettoyage de bureaux</option>
+              <option value="Entretien copropriété">🏘️ Entretien copropriété</option>
+              <option value="Nettoyage de commerce">🛒 Nettoyage de commerce</option>
+              <option value="Remise en état chantier">🔨 Remise en état chantier</option>
+              <option value="Autre / multi-services">⚙️ Autre / multi-services</option>
             </select>
           </div>
 
-          <div class="form-consent">
-            <input type="checkbox" id="consent" required>
-            <label for="consent">
-              J'accepte d'être recontacté par AXEO Services Sèvres conformément à la
-              <a href="/politique-confidentialite/" target="_blank">politique de confidentialité</a>. *
+          <div class="form-row">
+            <label>Surface approximative & message</label>
+            <textarea name="message" placeholder="Ex: 200 m² de bureaux à Sèvres, intervention 3x/semaine en soirée"></textarea>
+          </div>
+
+          <div class="form-rgpd">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <label for="rgpd" style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--axeo-gray);font-size:12px;">
+              J'accepte d'être recontacté par AXEO Services Sèvres et j'ai lu la
+              <a href="/politique-confidentialite/">politique de confidentialité</a>.
             </label>
           </div>
 
-          <button type="button" id="btn-submit" class="btn-submit" onclick="envoyerFormulaire()">
-            📞 Être rappelé gratuitement
+          <button type="submit" class="form-submit" id="submitBtn">
+            ✅ Recevoir mon devis pro sous 24h
           </button>
-        </div>
 
-        <div id="form-merci">
-          <div class="check-icon">✓</div>
-          <h3>Merci !</h3>
-          <p>Votre demande est bien reçue.<br>On vous rappelle sous 1h.</p>
-        </div>
+          <div class="form-success" id="formSuccess">
+            ✅ Merci ! Votre demande est bien reçue.<br>
+            Notre responsable d'agence vous rappelle sous 24h ouvrées.
+          </div>
+        </form>
       </div>
-
-      <div class="zone-card">
-        <h3>📍 Notre zone d'intervention</h3>
-        <ul class="zone-list">
-          <li>Sèvres</li>
-          <li>Meudon</li>
-          <li>Meudon-la-Forêt</li>
-          <li>Chaville</li>
-          <li>Ville-d'Avray</li>
-          <li>Vaucresson</li>
-          <li>Marnes-la-Coquette</li>
-        </ul>
-        <div class="zone-info">
-          <p><strong>AXEO Services Sèvres</strong><br>
-          25 Avenue de l'Europe, 92310 Sèvres<br>
-          <br>
-          📞 <a href="tel:+33146269675" class="phone-num" style="color:#F29400;font-weight:800" onclick="return callClick('zone')">01 46 26 96 75</a><br>
-          ✉ sevres@axeoservices.fr<br>
-          <br>
-          Lun–Ven : 8h–19h</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
-     CTA FINAL
-     ═══════════════════════════════════════════════════════ -->
-<section class="cta-final">
-  <div class="container">
-    <h2>Prêt à vous simplifier la vie ?</h2>
-    <p>Devis gratuit en 1h · Intervention sous 48h · 50% crédit d'impôt</p>
-    <a class="cta-big" href="tel:+33146269675" onclick="return callClick('cta-final')">
-      📞 <span class="phone-num">01 46 26 96 75</span>
-    </a>
   </div>
 </section>
 
@@ -1281,138 +1509,122 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img src="assets/logo-axeo.jpg" alt="AXEO Services" style="height:84px; background:#fff; padding:6px 10px; border-radius:8px;">
           <img src="assets/logo-laposte.jpg" alt="Filiale La Poste" style="height:40px; background:#fff; padding:6px 8px; border-radius:8px;">
         </div>
-        <h4>AXEO Services Sèvres</h4>
-        <p>
-          Services à domicile agréés par l'État · Agrément SAP<br>
+        <h4 style="color:var(--axeo-orange); margin-bottom:8px;">AXEO Services Sèvres - Pro</h4>
+        <p style="color:#aaa; line-height:1.6; font-size:13px;">
+          Services de nettoyage et entretien aux professionnels<br>
           Exploité par <strong>Bicotin Services</strong><br>
           25 Avenue de l'Europe, 92310 Sèvres<br>
-          SIRET 824 171 466 00017<br>
-          Code APE 88.10A · Filiale La Poste
+          SIRET 824 171 466 00017 · Code APE 88.10A · Filiale La Poste
         </p>
       </div>
       <div>
-        <h4>Nos services</h4>
-        <ul>
-          <li>Ménage à domicile</li>
-          <li>Repassage</li>
-          <li>Aide à domicile seniors</li>
-          <li>Jardinage</li>
-          <li>Garde d'enfants</li>
-        </ul>
+        <h4>Nos services pros</h4>
+        <a href="#services">Nettoyage de bureaux</a>
+        <a href="#services">Entretien copropriétés</a>
+        <a href="#services">Nettoyage commerces</a>
+        <a href="#services">Remise en état chantier</a>
+        <!-- Lien vers LP particuliers à réactiver quand elle sera sur /particuliers/ -->
       </div>
       <div>
         <h4>Informations</h4>
-        <ul>
-          <li><a href="/mentions-legales/">Mentions légales</a></li>
-          <li><a href="/politique-confidentialite/">Politique de confidentialité</a></li>
-          <li><a href="tel:+33146269675" onclick="return callClick('footer')">
-            📞 <span class="phone-num">01 46 26 96 75</span>
-          </a></li>
-          <li>✉ sevres@axeoservices.fr</li>
-        </ul>
+        <a href="/mentions-legales/">Mentions légales</a>
+        <a href="/politique-confidentialite/">Politique de confidentialité</a>
+        <a href="tel:+33146269675" class="phone-num">📞 01 46 26 96 75</a>
+        <a href="mailto:sevres@axeoservices.fr">✉ sevres@axeoservices.fr</a>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 AXEO Services Sèvres (Bicotin Services) · Tous droits réservés
+      © 2026 Bicotin Services · AXEO Services Sèvres · Filiale La Poste · Tous droits réservés
     </div>
   </div>
 </footer>
 
 <!-- ═══════════════════════════════════════════════════════
-     STICKY BAR MOBILE
+     COOKIE BANNER (CNIL + Consent Mode v2)
      ═══════════════════════════════════════════════════════ -->
-<div class="sticky-mobile">
-  <a class="sticky-tel" href="tel:+33146269675" onclick="return callClick('sticky')">
-    📞 <span class="phone-num">01 46 26 96 75</span>
-  </a>
-  <a class="sticky-form" href="#contact">
-    ✉ Devis
-  </a>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════
-     BANDEAU CNIL COOKIES
-     ═══════════════════════════════════════════════════════ -->
-<div id="cookie-banner">
+<div class="cookie-banner" id="cookieBanner">
   <div class="cookie-inner">
     <div class="cookie-text">
-      Nous utilisons des cookies pour mesurer l'audience et améliorer votre expérience.
-      En savoir plus dans notre <a href="/politique-confidentialite/">politique de confidentialité</a>.
+      Nous utilisons des cookies pour mesurer l'audience et améliorer votre expérience. En savoir plus dans notre <a href="/politique-confidentialite/">politique de confidentialité</a>.
     </div>
-    <div class="cookie-buttons">
+    <div class="cookie-actions">
       <button class="cookie-btn cookie-refuse" onclick="refuseCookies()">Refuser</button>
       <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accepter</button>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════
-     JAVASCRIPT
-     ═══════════════════════════════════════════════════════ -->
 <script>
-// ── URL du webhook Apps Script (Sheet maître HAAS) ──
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyNg8V1NKWEdo_R5EYoiC5BjTzMNaApRijttiIyyj8kKNGYq4IGNYIsf5go5qTIQ7EP/exec';
-const CLIENT_SLUG = 'axeo-sevres';
-
-// ── FAQ toggle ──
-function toggleFaq(el) {
-  const item = el.parentElement;
-  item.classList.toggle('open');
+// === COOKIE CONSENT (CNIL + Google Consent Mode v2) ===
+function getCookie(name) {
+  const v = `; ${document.cookie}`.split(`; ${name}=`);
+  if (v.length === 2) return v.pop().split(';').shift();
+  return null;
 }
-
-// ── Tracking appel (GTM event + call_click) ──
-function callClick(emplacement) {
-  if (window.dataLayer) {
-    dataLayer.push({
-      'event': 'call_click',
-      'call_location': emplacement,
-      'phone_number': '+33146269675'
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + (days*24*60*60*1000));
+  document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/;SameSite=Lax`;
+}
+function showBanner() {
+  document.getElementById('cookieBanner').style.display = 'block';
+}
+function hideBanner() {
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+function acceptCookies() {
+  setCookie('cookie_consent', 'granted', 365);
+  gtag('consent', 'update', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+  hideBanner();
+}
+function refuseCookies() {
+  setCookie('cookie_consent', 'denied', 365);
+  hideBanner();
+}
+window.addEventListener('DOMContentLoaded', () => {
+  const c = getCookie('cookie_consent');
+  if (c === 'granted') {
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'analytics_storage': 'granted'
     });
+  } else if (c !== 'denied') {
+    setTimeout(showBanner, 1200);
   }
-  return true; // laisse le href tel: suivre
-}
-
-// ── Auto-format téléphone ──
-document.getElementById('telephone').addEventListener('input', function(e) {
-  let v = e.target.value.replace(/\D/g, '');
-  if (v.length > 0) v = v.match(/.{1,2}/g).join(' ');
-  e.target.value = v.substring(0, 14);
 });
 
-// ── Envoi formulaire ──
-async function envoyerFormulaire() {
-  const prenom = document.getElementById('prenom').value.trim();
-  const telephone = document.getElementById('telephone').value.trim();
-  const service = document.getElementById('service').value;
-  const consent = document.getElementById('consent').checked;
-  const erreur = document.getElementById('form-error');
-  const btn = document.getElementById('btn-submit');
+// === FORMULAIRE → WEBHOOK HAAS ===
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyNg8V1NKWEdo_R5EYoiC5BjTzMNaApRijttiIyyj8kKNGYq4IGNYIsf5go5qTIQ7EP/exec';
 
-  if (!prenom || !telephone || !service || !consent) {
-    erreur.style.display = 'block';
-    return;
-  }
-  erreur.style.display = 'none';
-
+document.getElementById('leadForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const success = document.getElementById('formSuccess');
   btn.disabled = true;
   btn.textContent = '⏳ Envoi en cours...';
 
-  // Récupération UTM depuis l'URL
-  const params = new URLSearchParams(window.location.search);
+  const formData = new FormData(e.target);
+  const data = {};
+  formData.forEach((v, k) => { data[k] = v; });
 
-  const data = {
-    client_slug: CLIENT_SLUG,
-    prenom: prenom,
-    telephone: telephone,
-    service: service,
-    commune: '',
-    message: '',
-    page: window.location.href,
-    source: document.referrer || 'Direct',
-    utm_source: params.get('utm_source') || '',
-    utm_medium: params.get('utm_medium') || '',
-    utm_campaign: params.get('utm_campaign') || ''
-  };
+  // Récupérer les UTMs depuis l'URL
+  const urlParams = new URLSearchParams(window.location.search);
+  data.utm_source = urlParams.get('utm_source') || 'direct';
+  data.utm_medium = urlParams.get('utm_medium') || '';
+  data.utm_campaign = urlParams.get('utm_campaign') || '';
+  data.utm_content = urlParams.get('utm_content') || '';
+  data.utm_term = urlParams.get('utm_term') || '';
+  data.gclid = urlParams.get('gclid') || '';
+  data.referrer = document.referrer || 'direct';
+  data.page_url = window.location.href;
+  data.timestamp = new Date().toISOString();
 
   try {
     await fetch(APPS_SCRIPT_URL, {
@@ -1421,54 +1633,16 @@ async function envoyerFormulaire() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
-
-    // Tracking GTM
+    e.target.style.display = 'none';
+    success.style.display = 'block';
+    // Push conversion event GTM
     if (window.dataLayer) {
-      dataLayer.push({
-        'event': 'form_lead',
-        'service': service,
-        'client': CLIENT_SLUG
-      });
+      window.dataLayer.push({ event: 'lead_form_submit', form_type: 'pro', service: data.service });
     }
-
-    document.getElementById('form-contact').style.display = 'none';
-    document.getElementById('form-merci').style.display = 'block';
-  } catch(e) {
+  } catch (err) {
     btn.disabled = false;
-    btn.textContent = '📞 Être rappelé gratuitement';
-    erreur.textContent = '⚠️ Erreur réseau. Merci de rappeler au 01 46 26 96 75.';
-    erreur.style.display = 'block';
-  }
-}
-
-// ── Consent Mode v2 cookies ──
-function acceptCookies() {
-  gtag('consent', 'update', {
-    'ad_storage': 'granted',
-    'analytics_storage': 'granted',
-    'ad_user_data': 'granted',
-    'ad_personalization': 'granted'
-  });
-  localStorage.setItem('cookie_consent', 'accepted');
-  document.getElementById('cookie-banner').classList.remove('show');
-}
-function refuseCookies() {
-  localStorage.setItem('cookie_consent', 'refused');
-  document.getElementById('cookie-banner').classList.remove('show');
-}
-// Afficher le bandeau si pas encore de choix
-window.addEventListener('DOMContentLoaded', function() {
-  if (!localStorage.getItem('cookie_consent')) {
-    setTimeout(function() {
-      document.getElementById('cookie-banner').classList.add('show');
-    }, 1000);
-  } else if (localStorage.getItem('cookie_consent') === 'accepted') {
-    gtag('consent', 'update', {
-      'ad_storage': 'granted',
-      'analytics_storage': 'granted',
-      'ad_user_data': 'granted',
-      'ad_personalization': 'granted'
-    });
+    btn.textContent = '✅ Recevoir mon devis pro sous 24h';
+    alert('Erreur lors de l\'envoi. Merci d\'appeler directement le 01 46 26 96 75.');
   }
 });
 </script>
