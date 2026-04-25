@@ -137,10 +137,13 @@ body {
   background: #fff;
   padding: 14px 0;
   border-bottom: 1px solid #e5e5e5;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
 }
 .header-inner {
   display: flex;
@@ -1019,6 +1022,103 @@ body {
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
 }
 
+/* ===== BOUTON TÉLÉPHONE FLOTTANT ===== */
+.float-call {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9998;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--axeo-orange) 0%, var(--axeo-orange-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 28px rgba(242,148,0,0.5), 0 0 0 0 rgba(242,148,0,0.7);
+  transition: transform 0.2s ease;
+  animation: floatPulse 2.5s infinite;
+}
+.float-call:hover {
+  transform: scale(1.08);
+  animation: none;
+}
+.float-call svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+.float-call::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--axeo-orange);
+  animation: floatRipple 2.5s infinite;
+}
+
+@keyframes floatPulse {
+  0% { box-shadow: 0 8px 28px rgba(242,148,0,0.5), 0 0 0 0 rgba(242,148,0,0.7); }
+  70% { box-shadow: 0 8px 28px rgba(242,148,0,0.5), 0 0 0 18px rgba(242,148,0,0); }
+  100% { box-shadow: 0 8px 28px rgba(242,148,0,0.5), 0 0 0 0 rgba(242,148,0,0); }
+}
+
+@keyframes floatRipple {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+/* Tooltip sur hover desktop */
+.float-call::before {
+  content: '☎ Appeler maintenant';
+  position: absolute;
+  right: 78px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--axeo-black);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.float-call:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .float-call {
+    width: 58px;
+    height: 58px;
+    bottom: 18px;
+    right: 18px;
+  }
+  .float-call svg {
+    width: 26px;
+    height: 26px;
+  }
+  /* Pas de tooltip sur mobile */
+  .float-call::before { display: none; }
+}
+
+/* Décaler le bouton flottant quand le bandeau cookies est visible */
+body.cookie-visible .float-call {
+  bottom: 90px;
+}
+@media (max-width: 768px) {
+  body.cookie-visible .float-call {
+    bottom: 130px;
+  }
+}
+
 /* ===== COOKIE BANNER ===== */
 .cookie-banner {
   position: fixed;
@@ -1540,6 +1640,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <!-- ═══════════════════════════════════════════════════════
+     BOUTON TÉLÉPHONE FLOTTANT (toujours visible)
+     ═══════════════════════════════════════════════════════ -->
+<a href="tel:+33146269675"
+   class="float-call phone-num"
+   aria-label="Appeler AXEO Services Sèvres Pro"
+   onclick="if(window.dataLayer){window.dataLayer.push({event:'phone_click', source:'float_button'});}">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/>
+  </svg>
+</a>
+
+<!-- ═══════════════════════════════════════════════════════
      COOKIE BANNER (CNIL + Consent Mode v2)
      ═══════════════════════════════════════════════════════ -->
 <div class="cookie-banner" id="cookieBanner">
@@ -1568,9 +1680,11 @@ function setCookie(name, value, days) {
 }
 function showBanner() {
   document.getElementById('cookieBanner').style.display = 'block';
+  document.body.classList.add('cookie-visible');
 }
 function hideBanner() {
   document.getElementById('cookieBanner').style.display = 'none';
+  document.body.classList.remove('cookie-visible');
 }
 function acceptCookies() {
   setCookie('cookie_consent', 'granted', 365);
